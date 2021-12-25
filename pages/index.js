@@ -1,11 +1,16 @@
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import {Text,Box} from "@chakra-ui/react";
+import {Text, Box, SimpleGrid} from "@chakra-ui/react";
 import Header from "../components/header/Header";
 import Search from "../components/Search";
+import PostCard from "../components/PostCard";
 
-export default function Home() {
+export default function Home({posts}) {
+    console.log(posts)
   return (
     <div className={styles.container}>
       <Head>
@@ -16,11 +21,36 @@ export default function Home() {
         <Box>
             <Header/>
             <Search/>
-            <Box paddingX={'12'} mt={'6'}>
-            <Text fontSize={'24'}>check</Text>
+            <Box paddingX={'12'} mt={'12'}>
+                <SimpleGrid columns={3} spacing={6}>
+                    {posts.map((post)=> <PostCard
+                        title={post.postData.title}
+                        date={post.postData.date}
+                        author={post.postData.author}
+                        coverImg={post.postData.cover_image}
+                        category={post.postData.category}
+                        excerpt={post.postData.excerpt}
+                        />
+                    )}
+                </SimpleGrid>
 
             </Box>
         </Box>
     </div>
   )
+}
+export async function getStaticProps() {
+    const files = fs.readdirSync(path.join('posts'))
+    const posts = files.map((post)=>{
+        const slug = post.replace('.md','')
+        const markdownWithMatter = fs.readFileSync(path.join('posts',post,),'utf-8')
+        const {data : postData} = matter(markdownWithMatter)
+        return {
+            slug,
+            postData
+        }
+    })
+    return {
+        props : {posts}
+    }
 }
