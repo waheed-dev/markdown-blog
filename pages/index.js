@@ -17,7 +17,7 @@ export default function Home() {
             <Header/>
             <Search/>
             <Box paddingX={'12'} mt={'6'}>
-            <Text fontSize={'24'}>hahahha</Text>
+            <Text fontSize={'24'}>check</Text>
 
             </Box>
         </Box>
