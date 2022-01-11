@@ -1,21 +1,39 @@
-import {Box, Text,Image} from "@chakra-ui/react";
+import { Box, Image, Text } from "@chakra-ui/react";
+import Link from "next/link";
+import CategoryLabel from "./CategoryLabel";
 
-const PostCard = ({title,author,date,coverImg,category, excerpt}) => {
-    return (
-    <Box  _hover={{
-        border:'1px',
+const PostCard = ({ title, author, date, coverImg, category, excerpt,slug}) => {
+  return (
+    <Link href={`/blog/${slug}`}>
+      <Box
+      _hover={{
+        border: "1px",
         borderColor: "teal.500",
-    }} padding={'2'} borderRadius={'2xl'}>
-        <Image objectFit={'cover'} borderRadius={'2xl'} boxSize={'400'} src={coverImg} alt="postCOverimg"/>
-        <Box display={'flex'} justifyContent={'space-between'} mb={'2'}>
-
-        <Text color={'gray.600'}>{date}</Text>
-        <Text fontWeight={'medium'}>{author}</Text>
-        </Box>
-        <Text fontSize={'26'} fontWeight={'medium'} mb={'2'}>{title}</Text>
-        <Text fontSize={'18'} color={'gray.600'}>{excerpt}</Text>
+      }}
+      padding={"2"}
+      borderRadius={"2xl"}
+    >
+      <Image
+        objectFit={"cover"}
+        borderRadius={"2xl"}
+        boxSize={"400"}
+        src={coverImg}
+        alt="post-coverimg"
+      />
+      <Box display={"flex"} justifyContent={"space-between"} mb={"2"} mt={"2"}>
+        <Text color={"gray.600"}>{date}</Text>
+        <CategoryLabel>{category}</CategoryLabel>
+        <Text fontWeight={"medium"}>{author}</Text>
+      </Box>
+      <Text fontSize={"26"} fontWeight={"medium"} mb={"2"}>
+        {title}
+      </Text>
+      <Text fontSize={"18"} color={"gray.600"}>
+        {excerpt}
+      </Text>
     </Box>
-    )
-}
+    </Link>
+  );
+};
 
-export default PostCard
+export default PostCard;
