@@ -11,7 +11,6 @@ import { sortByDate } from "../Helpers";
 import Category from "../components/Category";
 
 export default function Home({ posts }) {
-  console.log(posts);
   return (
     <div className={styles.container}>
       <Head>

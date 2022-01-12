@@ -14,3 +14,10 @@ a {
 * {
   box-sizing: border-box;
 }
+
+p {
+  margin: 15px 0;
+  line-height: 1.8;
+}
+
+

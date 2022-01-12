@@ -1,4 +1,5 @@
 import {Button, useColorMode, Box, Text, Heading, Divider} from "@chakra-ui/react";
+import Link from 'next/link'
 
 const Header = () => {
     const { colorMode, toggleColorMode } = useColorMode()
@@ -6,7 +7,12 @@ const Header = () => {
         <Box>
 
         <Box display={'flex'}  justifyContent={'space-between'} padding={'6'}>
-        <Heading>Waheed</Heading>
+        <Heading>
+            <Link href={'/'}>
+
+            Waheed
+            </Link>
+        </Heading>
             <Box display={'flex'}  alignItems={'center'} gap={'6'}>
 
             <Text>About</Text>
