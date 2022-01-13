@@ -21,7 +21,7 @@ export default function PostDetails({frontmatter,content,slug}) {
             </Head>
             <Header />
             <Box mt={'16'} px={'44'}>
-            <Link href={'/'}><Box _hover={{cursor : 'pointer'}} display={'flex'} gap={'6'} alignItems={'center'} fontSize={'2xl'} mb={'12'}> <BiArrowBack/>Go Back</Box></Link>
+            <Link href={'/blog'}><Box _hover={{cursor : 'pointer'}} display={'flex'} gap={'6'} alignItems={'center'} fontSize={'2xl'} mb={'12'}> <BiArrowBack/>Go Back</Box></Link>
                 <Box px={''}>
                     <Heading>{frontmatter.title}</Heading>
                     <Text mt={'2'} fontSize={'lg'} _dark={{color : 'gray.400'}} color={'gray.600'}>{frontmatter.date}</Text>

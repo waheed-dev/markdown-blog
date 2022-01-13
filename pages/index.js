@@ -1,16 +1,11 @@
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
+
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import { Box, SimpleGrid } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import Header from "../components/header/Header";
-import Search from "../components/Search";
-import PostCard from "../components/PostCard";
-import { sortByDate } from "../Helpers";
-import Category from "../components/Category";
+import Footer from "../components/Footer";
 
-export default function Home({ posts }) {
+export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
@@ -20,45 +15,14 @@ export default function Home({ posts }) {
       </Head>
       <Box>
         <Header />
-        <Search />
-        <Category />
+
         <Box paddingX={"12"} mt={"12"}>
-          <SimpleGrid columns={3} spacing={6}>
-            {posts.map((post) => (
-              <PostCard
-                title={post.postData.title}
-                date={post.postData.date}
-                author={post.postData.author}
-                coverImg={post.postData.cover_image}
-                category={post.postData.category}
-                excerpt={post.postData.excerpt}
-                slug={post.slug}
-              />
-            ))}
-          </SimpleGrid>
+          hi welcome to my portfolio
+        </Box>
+        <Box mt={"8"} pb={"4"} paddingX={"12"}>
+          <Footer />
         </Box>
       </Box>
     </div>
   );
-}
-
-export async function getStaticProps() {
-  const files = fs.readdirSync(path.join("posts"));
-  const posts = files.map((post) => {
-    const slug = post.replace(".md", "");
-    const markdownWithMatter = fs.readFileSync(
-      path.join("posts", post),
-      "utf-8"
-    );
-    const { data: postData } = matter(markdownWithMatter);
-    return {
-      slug,
-      postData,
-    };
-  });
-  return {
-    props: {
-      posts: posts.sort(sortByDate).slice(0, 6)
-    },
-  };
 }

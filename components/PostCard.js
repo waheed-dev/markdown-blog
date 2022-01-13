@@ -9,6 +9,7 @@ const PostCard = ({ title, author, date, coverImg, category, excerpt,slug}) => {
       _hover={{
         border: "1px",
         borderColor: "teal.500",
+        cursor : 'pointer'
       }}
       padding={"2"}
       borderRadius={"2xl"}

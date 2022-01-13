@@ -15,7 +15,11 @@ const Header = () => {
         </Heading>
             <Box display={'flex'}  alignItems={'center'} gap={'6'}>
 
-            <Text>About</Text>
+
+                <Link href={'/blog'}>
+
+                    Blog
+                </Link>
         <Button onClick={toggleColorMode}>
             Toggle {colorMode === 'light' ? 'Dark' : 'Light'}
         </Button>
