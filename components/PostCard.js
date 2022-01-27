@@ -8,7 +8,7 @@ const PostCard = ({ title, author, date, coverImg, category, excerpt,slug}) => {
       <Box
       _hover={{
         border: "1px",
-        borderColor: "teal.500",
+        borderColor: "green.400",
         cursor : 'pointer'
       }}
       padding={"2"}
@@ -18,6 +18,7 @@ const PostCard = ({ title, author, date, coverImg, category, excerpt,slug}) => {
         objectFit={"cover"}
         borderRadius={"2xl"}
         boxSize={"400"}
+        width={''}
         src={coverImg}
         alt="post-coverimg"
       />
