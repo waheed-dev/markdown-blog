@@ -4,7 +4,6 @@ import Path from 'path'
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 import Header from "../../components/header/Header";
-import styles from "../../styles/Home.module.css";
 import Head from "next/head";
 import {BiArrowBack} from "react-icons/bi";
 import Link from 'next/link'
@@ -14,13 +13,15 @@ import ChakraUIRenderer from "chakra-ui-markdown-renderer";
 export default function PostDetails({frontmatter,content}) {
     console.log(frontmatter)
     return (
-        <div className={styles.container}>
+        <div>
             <Head>
                 <title>{frontmatter.title}</title>
             </Head>
-            <Header />
-            <Box mt={'16'} px={'44'}>
-            <Link href={'/blog'} passHref><Box _hover={{cursor : 'pointer'}} display={'flex'} gap={'6'} alignItems={'center'} fontSize={'2xl'} mb={'12'}> <BiArrowBack/>Go Back</Box></Link>
+            <Box paddingX={['6','10','50','160']} mt={['6','8','10','10']}>
+                <Header />
+            </Box>
+            <Box paddingX={['6','10','50','160']} mt={['6','8','10','10']}>
+            <Link href={'/blog'} passHref><Box _hover={{cursor : 'pointer'}} display={'flex'} gap={'4'} alignItems={'center'} fontSize={['xl','2xl','2xl','2xl']} mb={'8'}> <BiArrowBack/>Go Back</Box></Link>
                 <Box px={''}>
                     <Heading>{frontmatter.title}</Heading>
                     <Text mt={'2'} fontSize={'lg'} _dark={{color : 'gray.400'}} color={'gray.600'}>{frontmatter.date}</Text>
