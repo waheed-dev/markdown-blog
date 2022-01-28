@@ -35,7 +35,7 @@ const Skills = () => {
                                       <FcGoogle/>
                                   </Box>
                                   oogle</Box>
-                              <Box  display={'flex'} mt={'4'} justifyContent={'space-evenly'} alignContent={'center'}>
+                              <Box  display={'flex'} mt={'4'} justifyContent={'space-evenly'} alignContent={'center'} gap={'6'}>
 
                               <Box >
                                   <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']}  my={'10'}><SiJavascript size={'25'} color={'green'}/> Javascript</Text>
@@ -62,7 +62,7 @@ const Skills = () => {
                                       <FcGoogle/>
                                   </Box>
                                   oogle</Box>
-                              <Box  mt={'4'} display={'flex'} justifyContent={'space-evenly'} alignContent={'center'}>
+                              <Box  mt={'4'} display={'flex'} justifyContent={'space-evenly'} alignContent={'center'} gap={'6'}>
 
                               <Box>
                                   <Text fontSize={'lg'}  display={'flex'}  gap={['2','6','10','14']}  my={'10'}><SiNodedotjs size={'25'} color={'green'}/> Node</Text>
@@ -82,8 +82,7 @@ const Skills = () => {
 
                           </TabPanel>
                           <TabPanel>
-                              <Box  mt={'4'} display={'flex'} justifyContent={'space-evenly'} alignContent={'center'}>
-
+                              <Box  mt={'4'} display={'flex'} justifyContent={'space-evenly'} gap={'6'} alignContent={'center'}>
                                   <Box>
                                       <Text fontSize={'lg'}  display={'flex'}  gap={['2','6','10','14']}  my={'10'}><SiGithub size={'25'} color={'green'}/>Git & Github</Text>
                                       <Text fontSize={'lg'}  display={'flex'}  gap={['2','6','10','14']}  my={'10'}><VscCode size={'25'} color={'green'}/>Vscode</Text>
