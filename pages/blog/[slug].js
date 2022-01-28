@@ -8,6 +8,7 @@ import Head from "next/head";
 import {BiArrowBack} from "react-icons/bi";
 import Link from 'next/link'
 import ChakraUIRenderer from "chakra-ui-markdown-renderer";
+import Footer from "../../components/Footer";
 
 
 export default function PostDetails({frontmatter,content}) {
@@ -21,7 +22,7 @@ export default function PostDetails({frontmatter,content}) {
                 <Header />
             </Box>
             <Box paddingX={['6','10','50','160']} mt={['6','8','10','10']}>
-            <Link href={'/blog'} passHref><Button _hover={{cursor : 'pointer'}} display={'flex'} variant={'link'} gap={'4'} alignItems={'center'} fontSize={['xl','2xl','2xl','2xl']} mb={'8'}> <BiArrowBack/>Go Back</Button></Link>
+            <Link href={'/blog'} passHref><Button _hover={{cursor : 'pointer'}} display={'flex'} variant={'link'} gap={['2','4','4','6']} alignItems={'center'} fontSize={['xl','2xl','2xl','2xl']} mb={'8'}> <BiArrowBack/>Go back</Button></Link>
                 <Box px={''}>
                     <Heading>{frontmatter.title}</Heading>
                     <Text mt={'2'} fontSize={'lg'} _dark={{color : 'gray.400'}} color={'gray.600'}>{frontmatter.date}</Text>
@@ -30,6 +31,7 @@ export default function PostDetails({frontmatter,content}) {
                         <ReactMarkdown components={ChakraUIRenderer()}>{content}</ReactMarkdown>
                     </Text>
                 </Box>
+                <Footer/>
             </Box>
         </div>
     )
