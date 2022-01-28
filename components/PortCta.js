@@ -5,7 +5,7 @@ const PortCta = () => {
     return (
         <Box display={'flex'} justifyContent={'center'}>
             <ImQuotesLeft size={'30'}/>
-            <Heading textAlign={'center'} fontSize={['xl','xl','2xl','3xl']} my={'12'}
+            <Heading textAlign={'center'} fontSize={['2xl','2xl','3xl','3xl']} my={'12'}
             >In order to be irreplaceable, one must always be
                 <Heading fontSize={['xl','xl','2xl','3xl']} color={'green.600'} _dark={{color : 'green.400'}}
                             fontWeight={'bold'}>
