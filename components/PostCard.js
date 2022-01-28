@@ -4,7 +4,7 @@ import CategoryLabel from "./CategoryLabel";
 
 const PostCard = ({ title, author, date, coverImg, category, excerpt,slug}) => {
   return (
-    <Link href={`/blog/${slug}`}>
+    <Link href={`/blog/${slug}`} passHref>
       <Box
       _hover={{
         border: "1px",

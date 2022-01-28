@@ -1,5 +1,4 @@
 import {Box, Button} from "@chakra-ui/react";
-import {HiOutlineArrowNarrowLeft, HiOutlineArrowNarrowRight} from "react-icons/hi";
 import Link from 'next/link'
 import {MdKeyboardArrowLeft, MdKeyboardArrowRight} from "react-icons/md";
 
@@ -12,7 +11,7 @@ const Pagination = ({numPages,currentPage}) => {
   return (
     <Box display={"flex"} justifyContent={"center"} marginTop={6} gap={"3"}>
       {!isFirst && (
-        <Link href={prevPage}>
+        <Link href={prevPage} passHref>
           <Button
             variant={"outline"}
             display={"flex"}
@@ -27,7 +26,7 @@ const Pagination = ({numPages,currentPage}) => {
         </Link>
       )}
       {Array.from({ length: numPages }, (_, i) => (
-        <Link href={`/blog/page/${i + 1}`}>
+        <Link href={`/blog/page/${i + 1}`} passHref>
           <Button
             variant={"outline"}
             display={"flex"}
@@ -39,7 +38,7 @@ const Pagination = ({numPages,currentPage}) => {
         </Link>
       ))}
       {!isLast && (
-        <Link href={NextPage}>
+        <Link href={NextPage} passHref>
           <Button
             variant={"outline"}
             display={"flex"}

@@ -1,10 +1,9 @@
 import {Box, Heading, Image, Text} from "@chakra-ui/react";
 import Link from 'next/link'
 import {AiOutlineArrowRight} from "react-icons/ai";
-import {motion} from "framer-motion";
-const PortBlogCard = ({coverImg,title,excerpt,date,author,slug}) => {
+const PortBlogCard = ({coverImg,title,excerpt,date,slug}) => {
     return (
-      <Link href={`/blog/${slug}`}>
+      <Link href={`/blog/${slug}`} passHref>
           <Box>
 
         <Box
