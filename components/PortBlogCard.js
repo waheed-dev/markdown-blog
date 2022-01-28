@@ -16,7 +16,7 @@ const PortBlogCard = ({coverImg,title,excerpt,date,slug}) => {
           display={"flex"}
           height={"sm"}
           borderRadius={"2xl"}
-          width={['50','xl','2xl','4xl']}
+          width={['md/2','xl','2xl','4xl']}
           _hover={{
             cursor: "pointer",
           }}

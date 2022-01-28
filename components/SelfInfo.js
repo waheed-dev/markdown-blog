@@ -14,7 +14,7 @@ const SelfInfo = () => {
 
                 </Box>
             </Box>
-            <Box gap={4} fontSize={'3xl'} fontWeight={'extrabold'} width={['sm','md','lg','lg']}>
+            <Box gap={4} fontSize={'3xl'} fontWeight={'extrabold'} width={['','md','lg','lg']}>
                 <Text>Hi,My Name is <Text as={'span'} color={'green.600'} _dark={{color : 'green.400'}}>Waheed
                 </Text></Text>
                 <Text fontSize={'2xl'} color={'gray.500'}>Full Stack developer</Text>

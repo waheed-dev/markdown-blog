@@ -11,7 +11,7 @@ const Blog = () => {
                 mx={'auto'}
                 mb={'2'}
             />
-            <Box width={'sm'}>
+            <Box width={['','md','lg','lg']}>
                 <Heading>Markdown Blog</Heading>
                 <Text fontSize={'2xl'} fontWeight={'bold'} color={'gray.500'}>Next js,Material ui,openMapWeatherApi</Text>
                 <Text fontSize={'lg'} mt={'4'} mb={'10'}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dolores eaque esse quibusdam quod soluta.
