@@ -7,7 +7,9 @@ const Weather = () => {
         <Image
             src="/Weather.svg"
             alt="Picture of the author"
-            boxSize={'330'}
+            boxSize={['150','240','240','240']}
+            mx={'auto'}
+            mb={'2'}
         />
           <Box  width={['sm','md','lg','lg']}>
               <Heading>Weather Application</Heading>

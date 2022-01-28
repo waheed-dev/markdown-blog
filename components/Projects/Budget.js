@@ -3,8 +3,14 @@ import {AiFillGithub} from "react-icons/ai";
 
 const Budget = () => {
     return (
-        <Box  mt={'20'} display={['block','flex','flex','flex']} justifyContent={'space-evenly'} gap={'4'}>
-
+        <Box  mt={'20'} display={['block','flex','flex','flex']} justifyContent={'space-evenly'} flexDirection={'row-reverse'} gap={'4'}>
+            <Image
+                src="/Budget.svg"
+                alt="Picture of the author"
+                boxSize={['150','240','240','240']}
+                mx={'auto'}
+                mb={'2'}
+            />
             <Box width={'sm'}>
                 <Heading>Budget Application</Heading>
                 <Text fontSize={'2xl'} fontWeight={'bold'} color={'gray.500'}>Next js,Material ui,openMapWeatherApi</Text>
@@ -17,11 +23,7 @@ const Budget = () => {
                     <AiFillGithub color={'green'} size={'40'}/>
                 </Box>
             </Box>
-            <Image
-                src="/Budget.svg"
-                alt="Picture of the author"
-                boxSize={'330'}
-            />
+
         </Box>
     )
 }
