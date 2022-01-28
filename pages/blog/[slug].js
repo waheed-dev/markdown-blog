@@ -1,4 +1,4 @@
-import {Box, Heading, Text,Image} from "@chakra-ui/react";
+import {Box, Heading, Text, Image, Button} from "@chakra-ui/react";
 import fs from 'fs'
 import Path from 'path'
 import matter from "gray-matter";
@@ -21,7 +21,7 @@ export default function PostDetails({frontmatter,content}) {
                 <Header />
             </Box>
             <Box paddingX={['6','10','50','160']} mt={['6','8','10','10']}>
-            <Link href={'/blog'} passHref><Box _hover={{cursor : 'pointer'}} display={'flex'} gap={'4'} alignItems={'center'} fontSize={['xl','2xl','2xl','2xl']} mb={'8'}> <BiArrowBack/>Go Back</Box></Link>
+            <Link href={'/blog'} passHref><Button _hover={{cursor : 'pointer'}} display={'flex'} variant={'link'} gap={'4'} alignItems={'center'} fontSize={['xl','2xl','2xl','2xl']} mb={'8'}> <BiArrowBack/>Go Back</Button></Link>
                 <Box px={''}>
                     <Heading>{frontmatter.title}</Heading>
                     <Text mt={'2'} fontSize={'lg'} _dark={{color : 'gray.400'}} color={'gray.600'}>{frontmatter.date}</Text>
