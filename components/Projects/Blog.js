@@ -3,7 +3,7 @@ import {AiFillGithub} from "react-icons/ai";
 
 const Blog = () => {
     return (
-        <Box  mt={'20'} display={['block','flex','flex','flex']} justifyContent={'space-evenly'} gap={'4'}>
+        <Box  mt={'20'} display={['block','flex','flex','flex']} justifyContent={'space-evenly'} gap={'4'} pb={'6'} borderBottom={['1px','0px','0px','0px']} borderColor={'green.600'}>
             <Image
                 src="/Blog.svg"
                 alt="Picture of the author"
@@ -19,8 +19,8 @@ const Blog = () => {
                 </Text>
                 <Box display={'flex'} gap={'12'}>
 
-                    <Button colorScheme={'green'}>Live preview</Button>
-                    <AiFillGithub color={'green'} size={'40'}/>
+                    <Button colorScheme={'green'} borderColor={'green.600'}>Live preview</Button>
+                    <AiFillGithub color={'#2f855a'} size={'40'}/>
                 </Box>
             </Box>
         </Box>

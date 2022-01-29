@@ -6,11 +6,11 @@ import {BsMoon, BsSun} from "react-icons/bs";
 const Header = () => {
     const { colorMode, toggleColorMode } = useColorMode()
     return (
-        <Box >
+        <Box  bg={''}>
         <Box display={'flex'}  justifyContent={'space-between'} mb={'10'} alignItems={'center'}>
         <Heading
-            letterSpacing={'2px'} fontSize={['xl','2xl','3xl','4xl']} bgGradient='linear(to-l, #7928CA, #FF0080)'  bgClip={'text'}>
-            <Link href={'/'}>
+            letterSpacing={'2px'} fontSize={['xl','2xl','3xl','4xl']} bgGradient='linear(to-l, #7928CA, #FF0080)'  bgClip={'text'} _hover={{cursor : 'pointer'}}>
+            <Link href={'/'} >
                 WAHEED
             </Link>
         </Heading>
@@ -19,11 +19,11 @@ const Header = () => {
 
                 <Link href={'/blog'}>
 
-                   <Text fontSize={'lg'} fontWeight={'semibold'}>
+                   <Button variant={'unstyled'} fontSize={'lg'} fontWeight={'semibold'}  _hover={{cursor : 'pointer'}}>
                        Blog
-                   </Text>
+                   </Button>
                 </Link>
-        <Button onClick={toggleColorMode}>
+        <Button variant={'outline'} onClick={toggleColorMode}>
              {colorMode === 'light' ? <BsSun size={20}/> : <BsMoon size={'20'}/>}
         </Button>
             </Box>
