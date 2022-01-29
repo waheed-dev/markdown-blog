@@ -71,7 +71,7 @@ const Skills = () => {
                               </Box>
 
                           </TabPanel>
-                          <TabPanel>
+                          <TabPanel mt={'4'}>
                               <Box  mt={'4'} display={'flex'} justifyContent={'space-evenly'} gap={''} alignContent={'center'}>
                                   <Box>
                                       <Text fontSize={'lg'}  display={'flex'}  gap={['2','6','10','14']}  my={'10'}><SiGithub size={'25'} color={'#2f855a'}/>Git & Github</Text>
