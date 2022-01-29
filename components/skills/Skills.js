@@ -21,7 +21,7 @@ const Skills = () => {
 
       <Heading>Skills</Heading>
           <Box mt={'20'}>
-              <Box ml={'10'}>
+              <Box ml={['6','10','10','10']}>
                   <Tabs colorScheme={'green'} variant={'line'} size={'md'}>
                       <TabList display={'flex'} justifyContent={'space-evenly'}>
                           <Tab>Frontend</Tab>
