@@ -19,7 +19,7 @@ const Blog = () => {
                 </Text>
                 <Box display={'flex'} gap={'12'}>
 
-                    <Button colorScheme={'green'} borderColor={'green.600'}>Live preview</Button>
+                    <Button colorScheme={'green'} bgColor={'green.600'} borderColor={'green.600'}>Live preview</Button>
                     <AiFillGithub color={'#2f855a'} size={'40'}/>
                 </Box>
             </Box>

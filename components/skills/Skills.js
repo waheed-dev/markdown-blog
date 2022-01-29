@@ -22,7 +22,7 @@ const Skills = () => {
       <Heading>Skills</Heading>
           <Box mt={'20'}>
               <Box ml={'10'}>
-                  <Tabs colorScheme={'green'} variant={'solid-rounded'} size={'md'}>
+                  <Tabs colorScheme={'green'} variant={'line'} size={'md'}>
                       <TabList display={'flex'} justifyContent={'space-evenly'}>
                           <Tab>Frontend</Tab>
                           <Tab>Backend</Tab>
@@ -30,11 +30,6 @@ const Skills = () => {
                       </TabList>
                       <TabPanels>
                           <TabPanel mt={'4'}>
-                              <Box display={'flex'} fontWeight={'bold'} justifyContent={'center'} fontSize={'lg'}>
-                                  <Box mt={'1'}>
-                                      <FcGoogle/>
-                                  </Box>
-                                  oogle</Box>
                               <Box  display={'flex'} mt={'4'} justifyContent={'space-evenly'} alignContent={'center'} gap={'6'}>
 
                               <Box >
@@ -43,7 +38,7 @@ const Skills = () => {
                                   <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']}  my={'10'}><SiTypescript size={'25'} color={'#2f855a'}/> Typescript</Text>
                                   <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']}  my={'10'}><SiNextdotjs size={'25'} color={'#2f855a'}/> NextJS</Text>
                                   <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']} my={'10'}><SiHtml5 size={'25'}  color={'#2f855a'}/> HTML5</Text>
-                                  <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']}  my={'10'}><SiCss3 size={'25'}  color={'#2f855a'}/> CSS3</Text>
+                                  <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']}  my={['16','10','10','10']}><SiCss3 size={'25'}  color={'#2f855a'}/> CSS3</Text>
                               </Box>
                               <Box>
                                   <Text fontSize={'lg'} display={'flex'} gap={['2','6','10','14']} my={'10'}><SiFigma size={'25'}  color={'#2f855a'}/> Figma</Text>
@@ -57,11 +52,6 @@ const Skills = () => {
 
                           </TabPanel>
                           <TabPanel mt={'4'}>
-                              <Box display={'flex'} fontWeight={'bold'} justifyContent={'center'} fontSize={'lg'} >
-                                  <Box mt={'1'}>
-                                      <FcGoogle/>
-                                  </Box>
-                                  oogle</Box>
                               <Box  mt={'4'} display={'flex'} justifyContent={'space-evenly'} alignContent={'center'} gap={'6'}>
 
                               <Box>
@@ -82,7 +72,7 @@ const Skills = () => {
 
                           </TabPanel>
                           <TabPanel>
-                              <Box  mt={'4'} display={'flex'} justifyContent={'space-evenly'} gap={'6'} alignContent={'center'}>
+                              <Box  mt={'4'} display={'flex'} justifyContent={'space-evenly'} gap={''} alignContent={'center'}>
                                   <Box>
                                       <Text fontSize={'lg'}  display={'flex'}  gap={['2','6','10','14']}  my={'10'}><SiGithub size={'25'} color={'#2f855a'}/>Git & Github</Text>
                                       <Text fontSize={'lg'}  display={'flex'}  gap={['2','6','10','14']}  my={'10'}><VscCode size={'25'} color={'#2f855a'}/>Vscode</Text>
@@ -91,9 +81,9 @@ const Skills = () => {
                                   </Box>
                                   <Box>
                                       <Text fontSize={'lg'} display={'flex'}  gap={['2','6','10','14']} my={'10'}><SiC size={'25'}  color={'#2f855a'}/>C</Text>
-                                      <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']} my={'10'}><SiWebstorm size={'25'}  color={'#2f855a'}/>Webstorm</Text>
-                                      <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']} my={'10'}><SiWordpress size={'25'}  color={'#2f855a'}/>Wordpress</Text>
-                                      <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']} my={'10'}><SiKubernetes size={'25'}  color={'#2f855a'}/>Kubernetes</Text>
+                                      <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']} my={['10','10','10','10']}><SiWebstorm size={'25'}  color={'#2f855a'}/>Webstorm</Text>
+                                      <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']} my={['10','10','10','10']}><SiWordpress size={'25'}  color={'#2f855a'}/>Wordpress</Text>
+                                      <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']} my={['10','10','10','10']}><SiKubernetes size={'25'}  color={'#2f855a'}/>Kubernetes</Text>
                                   </Box>
                               </Box>
                           </TabPanel>
