@@ -12,6 +12,7 @@ import SelfInfo from "../components/SelfInfo";
 import Projects from "../components/Projects/Projects";
 import Skills from "../components/skills/Skills";
 import Testimonials from "../components/testemonials/Testimonials";
+import {ContactForm} from "../components/contact-form/ContactForm";
 
 export default function Home({posts}) {
   return (
@@ -41,6 +42,7 @@ export default function Home({posts}) {
             <Projects/>
             <Skills/>
               <Testimonials/>
+              <ContactForm/>
           <Footer/>
         </Box>
 
