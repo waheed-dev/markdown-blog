@@ -140,10 +140,10 @@ export const Testimonials = () => {
                 >
                     <Testimonial
                         logo={<Plumtic h="6" color="gray.400" />}
-                        author="Kunle Adigun"
-                        role="Chief Technology Officer, Plumtic HQ"
+                        author="Fahrudi Budi Prasetyo"
+                        role="Chief Technology Officer, Astro Bike"
                         colorScheme="blue"
-                        image="https://images.unsplash.com/photo-1547037579-f0fc020ac3be?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTI2fHxtYW4lMjBzbWlsaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                        image="/fahrudi.jpeg"
                     >
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim

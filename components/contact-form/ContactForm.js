@@ -160,10 +160,10 @@ export const ContactForm = () =>  {
                             </Stack>
                             <FieldGroup mt={['-6','-4','1','1']}>
                                 <HStack width="full" gap={['2','2','4','4']}>
-                                    <Button type="submit"   px={['4','4','8','8']}  onClick={handleSubmit} colorScheme="green" bgColor={'green.500'}>
+                                    <Button type="submit"   px={['6','6','8','8']}  onClick={handleSubmit} colorScheme="green"  bgcolor={'green.600'} _dark={{backgroundColor : 'green.400'}}>
                                         Send
                                     </Button>
-                                    <Button variant="outline" px={['4','4','8','8']} onClick={ResetHandler}>Reset</Button>
+                                    <Button variant="outline" px={['6','6','8','8']} onClick={ResetHandler}>Reset</Button>
                                 </HStack>
                             </FieldGroup>
                         </form>
