@@ -25,14 +25,6 @@ export default function (req, res) {
         else
             console.log(info)
     })
-    if (!req.body.message) {
-        res.status(400).send()
-    }
-    if (!req.body.email) {
-        res.status(400).send()
-    }
-    if (!req.body.name) {
-        res.status(400).send()
-    }
+
     res.status(200).send()
 }
