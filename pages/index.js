@@ -11,6 +11,7 @@ import PortCta from "../components/PortCta";
 import SelfInfo from "../components/SelfInfo";
 import Projects from "../components/Projects/Projects";
 import Skills from "../components/skills/Skills";
+import Testimonials from "../components/testemonials/Testimonials";
 
 export default function Home({posts}) {
   return (
@@ -39,6 +40,7 @@ export default function Home({posts}) {
             <SelfInfo/>
             <Projects/>
             <Skills/>
+              <Testimonials/>
           <Footer/>
         </Box>
 
