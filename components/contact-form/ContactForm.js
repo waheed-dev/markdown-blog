@@ -12,8 +12,8 @@ import {
     Stack,
     StackDivider,
     Text,
-    Textarea,
-    useColorModeValue,
+    Textarea, toast,
+    useColorModeValue, useToast,
     VStack,
 } from '@chakra-ui/react'
 import * as React from 'react'
@@ -24,9 +24,10 @@ import {useState} from "react";
 
 
 export const ContactForm = () =>  {
-    const [name, setName] = useState()
-    const [email, setEmail] = useState()
-    const [message, setMessage] = useState()
+    const toast = useToast()
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
     const [submitted, setSubmitted] = useState(false)
     const ResetHandler = () => {
         setName('')
@@ -35,6 +36,42 @@ export const ContactForm = () =>  {
     }
     const handleSubmit = (e) => {
         e.preventDefault()
+        if (!message) return (
+            toast({
+                title: "Error",
+                description:'please input your message',
+                status: "error",
+                duration: 4000,
+                isClosable: true,
+            })
+        )
+        if (!email) return (
+            toast({
+                title: "Error",
+                description:'please input Email address',
+                status: "error",
+                duration: 4000,
+                isClosable: true,
+            })
+        )
+        if (!email.includes('@')) return (
+            toast({
+                title: "Error",
+                description:'please input correct Email address',
+                status: "error",
+                duration: 4000,
+                isClosable: true,
+            })
+        )
+        if (!name) return (
+            toast({
+                title: "Error",
+                description:'please input name',
+                status: "error",
+                duration: 4000,
+                isClosable: true,
+            })
+        )
         console.log('Sending')
         let data = {
             name,
@@ -49,13 +86,33 @@ export const ContactForm = () =>  {
             },
             body: JSON.stringify(data)
         }).then((res) => {
+
+            if (res.status === 400) return (
+                toast({
+                    title: "Error",
+                    description:'please try again',
+                    status: "error",
+                    duration: 4000,
+                    isClosable: true,
+                })
+            )
             console.log('Response received')
             if (res.status === 200) {
                 console.log('Response succeeded!')
                 setSubmitted(true)
                 setName('')
                 setEmail('')
-                setMessage('').res.send()
+                setMessage('')
+                return (
+                    toast({
+                        position: 'bottom',
+                        status : 'success',
+                        render: () => (
+                            <Box color='white' p={3} bg='green.700'>
+                                successfully sent
+                            </Box>
+                        ),})
+                )
             }
         })
     }
@@ -64,7 +121,7 @@ export const ContactForm = () =>  {
         <Box mt={['14','18','20','20']}  mb={'10'}>
 
             <Heading>Contact me</Heading>
-            <Box mt={['10','16','18','20']}>
+            <Box mt={['-12','2','10','10']}>
                 <Box ml={['6','10','10','10']}>
                     <Box
                         px={{
@@ -85,15 +142,15 @@ export const ContactForm = () =>  {
                                     <VStack width="full" spacing="6">
                                         <FormControl id="name">
                                             <FormLabel>Name</FormLabel>
-                                            <Input type="text" value={name} onChange={(e)=>{setName(e.target.value)}}  maxLength={255} />
+                                            <Input type="text" isRequired={true} value={name} onChange={(e)=>{setName(e.target.value)}}  maxLength={255} />
                                         </FormControl>
                                         <FormControl id="email">
                                             <FormLabel>Email</FormLabel>
-                                            <Input type="email" value={email} onChange={(e)=>{setEmail(e.target.value)}}  />
+                                            <Input type="email" isRequired={true} value={email} onChange={(e)=>{setEmail(e.target.value)}}  />
                                         </FormControl>
                                         <FormControl id="message">
                                             <FormLabel>Message</FormLabel>
-                                            <Textarea rows={5} value={message} onChange={(e)=>{setMessage(e.target.value)}}  />
+                                            <Textarea rows={5} isRequired={true} value={message} onChange={(e)=>{setMessage(e.target.value)}}  />
                                             <FormHelperText>
                                                 Send a brief message
                                             </FormHelperText>
@@ -101,12 +158,12 @@ export const ContactForm = () =>  {
                                     </VStack>
                                 </FieldGroup>
                             </Stack>
-                            <FieldGroup mt="8">
-                                <HStack width="full">
-                                    <Button type="submit" onClick={handleSubmit} colorScheme="green" bgColor={'green.600'}>
+                            <FieldGroup mt={['-6','-4','1','1']}>
+                                <HStack width="full" gap={['2','2','4','4']}>
+                                    <Button type="submit"   px={['4','4','8','8']}  onClick={handleSubmit} colorScheme="green" bgColor={'green.500'}>
                                         Send
                                     </Button>
-                                    <Button variant="outline" onClick={ResetHandler}>Reset</Button>
+                                    <Button variant="outline" px={['4','4','8','8']} onClick={ResetHandler}>Reset</Button>
                                 </HStack>
                             </FieldGroup>
                         </form>
