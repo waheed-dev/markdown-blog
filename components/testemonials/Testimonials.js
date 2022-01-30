@@ -118,7 +118,7 @@ export const Testimonials = () => {
         <Box mt={['14','18','20','20']}  mb={'10'}>
 
             <Heading>Testimonials</Heading>
-            <Box mt={'20'}>
+            <Box mt={['10','16','18','20']}>
                 <Box ml={['6','10','10','10']}>
         <Box as="section" bg={mode('white', 'gray.800')} py="12">
             <Box

@@ -20,7 +20,7 @@ const Skills = () => {
       <Box mt={['14','18','20','20']}  mb={'10'}>
 
       <Heading>Skills</Heading>
-          <Box mt={'20'}>
+          <Box mt={['10','16','18','20']}>
               <Box ml={['6','10','10','10']}>
                   <Tabs colorScheme={'green'} variant={'line'} size={'md'}>
                       <TabList display={'flex'} justifyContent={'space-evenly'}>

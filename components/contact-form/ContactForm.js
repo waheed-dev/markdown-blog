@@ -26,7 +26,7 @@ export const ContactForm = () => (
     <Box mt={['14','18','20','20']}  mb={'10'}>
 
         <Heading>Contact me</Heading>
-        <Box mt={'20'}>
+        <Box mt={['10','16','18','20']}>
             <Box ml={['6','10','10','10']}>
     <Box
         px={{
@@ -46,7 +46,7 @@ export const ContactForm = () => (
         >
             <Stack spacing="4" divider={<StackDivider />}>
 
-                <FieldGroup title="say hi">
+                <FieldGroup>
                     <VStack width="full" spacing="6">
                         <FormControl id="name">
                             <FormLabel>Name</FormLabel>
