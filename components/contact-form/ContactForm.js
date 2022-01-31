@@ -25,9 +25,9 @@ import {useState} from "react";
 
 export const ContactForm = () =>  {
     const toast = useToast()
-    const [name, setName] = useState('')
-    const [email, setEmail] = useState('')
-    const [message, setMessage] = useState('')
+    const [name, setName] = useState()
+    const [email, setEmail] = useState()
+    const [message, setMessage] = useState()
     const [submitted, setSubmitted] = useState(false)
     const ResetHandler = () => {
         setName('')
@@ -36,6 +36,42 @@ export const ContactForm = () =>  {
     }
     const handleSubmit = (e) => {
         e.preventDefault()
+        if (!message) return (
+            toast({
+                title: "Error",
+                description:'please input your message',
+                status: "error",
+                duration: 4000,
+                isClosable: true,
+            })
+        )
+        if (!email) return (
+            toast({
+                title: "Error",
+                description:'please input Email address',
+                status: "error",
+                duration: 4000,
+                isClosable: true,
+            })
+        )
+       if (!email.toString().includes('@')) return (
+           toast({
+               title: "Error",
+               description:'please correct input Email address',
+               status: "error",
+               duration: 4000,
+               isClosable: true,
+           })
+       )
+        if (!name) return (
+            toast({
+                title: "Error",
+                description:'please input name',
+                status: "error",
+                duration: 4000,
+                isClosable: true,
+            })
+        )
         console.log('Sending')
         let data = {
             name,
