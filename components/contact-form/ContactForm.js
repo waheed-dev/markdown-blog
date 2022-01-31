@@ -142,15 +142,15 @@ export const ContactForm = () =>  {
                                     <VStack width="full" spacing="6">
                                         <FormControl id="name">
                                             <FormLabel>Name</FormLabel>
-                                            <Input type="text" isRequired={true} value={name} onChange={(e)=>{setName(e.target.value)}}  maxLength={255} />
+                                            <Input type="text" value={name} onChange={(e)=>{setName(e.target.value)}}  maxLength={255} />
                                         </FormControl>
                                         <FormControl id="email">
                                             <FormLabel>Email</FormLabel>
-                                            <Input type="email" isRequired={true} value={email} onChange={(e)=>{setEmail(e.target.value)}}  />
+                                            <Input type="email" value={email} onChange={(e)=>{setEmail(e.target.value)}}  />
                                         </FormControl>
                                         <FormControl id="message">
                                             <FormLabel>Message</FormLabel>
-                                            <Textarea rows={5} isRequired={true} value={message} onChange={(e)=>{setMessage(e.target.value)}}  />
+                                            <Textarea rows={5} value={message} onChange={(e)=>{setMessage(e.target.value)}}  />
                                             <FormHelperText>
                                                 Send a brief message
                                             </FormHelperText>
