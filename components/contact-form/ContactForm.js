@@ -88,24 +88,25 @@ export const ContactForm = () =>  {
         }).then((res) => {
 
             console.log('Response received')
-            if (res.status === 200) {
-                console.log('Response succeeded!')
-                setSubmitted(true)
-                setName('')
-                setEmail('')
-                setMessage('')
-                return (
-                    toast({
-                        position: 'bottom',
-                        status : 'success',
-                        render: () => (
-                            <Box color='white' p={3} bg='green.700'>
-                                successfully sent
-                            </Box>
-                        ),})
-                )
-            }
+
         })
+        if (name.toString().length > 0  && email.toString().length > 0 && message.toString().length > 0) {
+            console.log('Response succeeded!')
+            setSubmitted(true)
+            setName('')
+            setEmail('')
+            setMessage('')
+            return (
+                toast({
+                    position: 'bottom',
+                    status : 'success',
+                    render: () => (
+                        <Box color='white' p={3} bg='green.700'>
+                            successfully sent
+                        </Box>
+                    ),})
+            )
+        }
     }
     return (
 
