@@ -36,42 +36,6 @@ export const ContactForm = () =>  {
     }
     const handleSubmit = (e) => {
         e.preventDefault()
-        if (!message) return (
-            toast({
-                title: "Error",
-                description:'please input your message',
-                status: "error",
-                duration: 4000,
-                isClosable: true,
-            })
-        )
-        if (!email) return (
-            toast({
-                title: "Error",
-                description:'please input Email address',
-                status: "error",
-                duration: 4000,
-                isClosable: true,
-            })
-        )
-        if (!email.includes('@')) return (
-            toast({
-                title: "Error",
-                description:'please input correct Email address',
-                status: "error",
-                duration: 4000,
-                isClosable: true,
-            })
-        )
-        if (!name) return (
-            toast({
-                title: "Error",
-                description:'please input name',
-                status: "error",
-                duration: 4000,
-                isClosable: true,
-            })
-        )
         console.log('Sending')
         let data = {
             name,
@@ -87,15 +51,6 @@ export const ContactForm = () =>  {
             body: JSON.stringify(data)
         }).then((res) => {
 
-            if (res.status === 400) return (
-                toast({
-                    title: "Error",
-                    description:'please try again',
-                    status: "error",
-                    duration: 4000,
-                    isClosable: true,
-                })
-            )
             console.log('Response received')
             if (res.status === 200) {
                 console.log('Response succeeded!')
