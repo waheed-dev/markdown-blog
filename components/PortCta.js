@@ -24,7 +24,7 @@ const PortCta = () => {
             </Heading>
             <Box alignSelf={'flex-end'}>
 
-            <ImQuotesRight size={'22'}/>
+            <ImQuotesRight size={'30'}/>
             </Box>
         </Box>
     )
