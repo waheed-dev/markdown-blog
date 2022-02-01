@@ -31,11 +31,11 @@ const PortBlogCard = ({title,excerpt,author,date,category,coverImg,slug}) => {
                     >
                         <Flex direction="column" h="full">
                             <Box flex="1">
-                                <Heading size="xl" mt="6" mb="16">
+                                <Heading size="xl" mt={['2','4','6','6']} mb={['6','10','12','16']}>
                                     From the Blog
                                 </Heading>
                                 <BlogMeta type={category} />
-                                <Heading size="xl" mt="6" mb="4">
+                                <Heading fontSize={['2xl','2xl','3xl','3xl']} mt={['','4','6','6']}  mb="4">
                                     {title}
                                 </Heading>
                                 <Text fontSize="lg" color={mode('gray.600', 'gray.400')} lineHeight="tall">

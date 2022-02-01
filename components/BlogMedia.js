@@ -5,7 +5,7 @@ import * as React from 'react'
 export const BlogMedia = (props) => {
     const { src, alt, ...rest } = props
     return (
-        <Box pos="relative" borderRadius={'xl'} cursor="pointer" className="group" h="400px" overflow="hidden" {...rest}>
+        <Box pos="relative" borderRadius={'xl'} cursor="pointer" className="group" h={['250','300','400','400']} overflow="hidden" {...rest}>
             <Img
                 w="full"
                 h="full"
