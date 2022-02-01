@@ -1,58 +1,58 @@
-import {Box, Heading, Image, Text} from "@chakra-ui/react";
+import { Box, Flex, Grid, Heading, Text, useColorModeValue as mode } from '@chakra-ui/react'
+import * as React from 'react'
+import {BlogMeta}  from './Media'
+import {BlogMedia} from "./BlogMedia";
 import Link from 'next/link'
-import {AiOutlineArrowRight} from "react-icons/ai";
-const PortBlogCard = ({coverImg,title,excerpt,date,slug}) => {
+const PortBlogCard = ({title,excerpt,author,date,category,coverImg,slug}) => {
     return (
-      <Link href={`/blog/${slug}`} passHref>
-          <Box>
+        <Link href={`/blog/${slug}`} passhref>
+            <Box as="section" _hover={{cursor : 'pointer'}} bg={mode('blackAlpha.200', 'whiteAlpha.200')} borderRadius={'lg'} mt={'6'} py="15">
+                <Box
+                    maxW={{
+                        base: 'xl',
+                        md: '7xl',
+                    }}
+                    mx="auto"
+                    px={{
+                        base: '6',
+                        md: '8',
+                    }}
+                >
+                    <Grid
+                        templateColumns={{
+                            base: '1fr',
+                            md: '1fr 24rem',
+                        }}
+                        columnGap={{
+                            base: '12',
+                            lg: '20',
+                        }}
+                        rowGap="10"
+                    >
+                        <Flex direction="column" h="full">
+                            <Box flex="1">
+                                <Heading size="xl" mt="6" mb="16">
+                                    From the Blog
+                                </Heading>
+                                <BlogMeta type={category} />
+                                <Heading size="xl" mt="6" mb="4">
+                                    {title}
+                                </Heading>
+                                <Text fontSize="lg" color={mode('gray.600', 'gray.400')} lineHeight="tall">
+                                    {excerpt}
+                                </Text>
+                            </Box>
+                        </Flex>
 
-        <Box
-          _dark={{ backgroundColor: "whiteAlpha.200" }}
-          bg={"blackAlpha.200"}
-          alignItems={"center"}
-          mt={"12"}
-          p={["3","5","6","10"]}
-          gap={["1","5","8","10"]}
-          display={"flex"}
-          height={"sm"}
-          borderRadius={"2xl"}
-          width={['md/2','xl','2xl','4xl']}
-          _hover={{
-            cursor: "pointer",
-          }}
-        >
-          <Box alignSelf={"center"}>
-            <Text
-              display={"flex"}
-              alignItems={"center"}
-              gap={"6"}
-              fontSize={['md','lg','2xl','3xl']}
-              mb={"8"}
-            >
-              Featured Article{" "}
-              <Box mt={"1"}>
-                <AiOutlineArrowRight size={"20"} />
-              </Box>
-            </Text>
-            <Heading fontSize={['xl','2xl','3xl','4xl']}>{title}</Heading>
-            <Text fontSize={["xs","sm","lg","lg"]} my={["3","3","4","6"]}>
-              {date}
-            </Text>
-            <Text fontSize={["xs","lg","xl","2xl"]} mt={'4'}>{excerpt}</Text>
-          </Box>
-          <Box w={""}>
-            <Image
-              objectFit={"cover"}
-              borderRadius={['xl','xl','2xl','2xl']}
-              boxSize={["280","330","350","360"]}
-              src={coverImg}
-              alt="post-coverimg"
-            />
-          </Box>
-        </Box>
-          </Box>
-      </Link>
-    );
+                        <BlogMedia
+                            alt={'cover Iamge'}
+                            src={coverImg}
+                        />
+                    </Grid>
+                </Box>
+            </Box>
+        </Link>
+
+    )
 }
-
 export default PortBlogCard

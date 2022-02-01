@@ -3,9 +3,9 @@ import Link from 'next/link'
 
 const SelfInfo = () => {
     return (
-        <Box mt={'20'}  mb={'10'} display={['block','flex','flex','flex']} justifyContent={'space-between'} flexDirection={'row-reverse'} alignContent={'center'}>
+        <Box mt={'20'}  mb={'14'} display={['block','flex','flex','flex']} justifyContent={'space-between'} flexDirection={'row-reverse'} alignContent={'center'}>
             <Box mb={['8','0','0','0']}>
-                <Box border={'2px'} mt={'4'} boxSize={['250','250','300','330']} display={'flex'} mx={"auto"} justifyContent={'center'} alignContent={'center'} borderColor={'green.400'} borderRadius={'full'}>
+                <Box border={'2px'} mt={'-2'} boxSize={['250','250','300','330']} display={'flex'} mx={"auto"} justifyContent={'center'} alignContent={'center'} borderColor={'green.400'} borderRadius={'full'}>
                     <Image
                         mt={'8'}
                         src="/Saitama.png"
@@ -16,9 +16,9 @@ const SelfInfo = () => {
                 </Box>
             </Box>
             <Box gap={4} fontSize={'3xl'} fontWeight={'extrabold'} width={['','md','lg','lg']}>
-                <Text>Hi,My Name is <Text as={'span'} color={'green.500'} _dark={{color : 'green.400'}}>Waheed
+                <Text>Hi,i'm <Text as={'span'} color={'green.500'} _dark={{color : 'green.400'}}>Waheed
                 </Text></Text>
-                <Text fontSize={'2xl'} color={'gray.500'}>Full Stack developer</Text>
+                <Text fontSize={['xl','xl','2xl','2xl']} color={'gray.500'}>Full Stack developer</Text>
                 <Text fontSize={'xl'} fontWeight={'normal'}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam et eveniet iusto nemo recusandae. Aut ex explicabo illum laborum mollitia odit officia, pariatur perspiciatis possimus quo, reiciendis sit vel veritatis!
                 </Text>
                 <Box display={'flex'} gap={6} mt={10}>
