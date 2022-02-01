@@ -6,7 +6,7 @@ import Link from 'next/link'
 const PortBlogCard = ({title,excerpt,author,date,category,coverImg,slug}) => {
     return (
         <Link href={`/blog/${slug}`} passhref>
-            <Box as="section" _hover={{cursor : 'pointer'}} bg={mode('blackAlpha.200', 'whiteAlpha.200')} borderRadius={'lg'} mt={'6'} py="15">
+            <Box as="section" _hover={{cursor : 'pointer'}} bg={mode('blackAlpha.200', 'whiteAlpha.200')} borderRadius={'lg'} mt={'12'} py="15">
                 <Box
                     maxW={{
                         base: 'xl',
