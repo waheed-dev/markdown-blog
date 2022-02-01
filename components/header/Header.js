@@ -10,7 +10,7 @@ const Header = () => {
         <Box>
         <Box display={'flex'}  justifyContent={'space-between'} mb={'10'} alignItems={'center'}>
         <Heading
-            letterSpacing={'2px'} fontSize={['xl','2xl','3xl','4xl']} bgGradient='linear(to-l, #7928CA, #FF0080)'  bgClip={'text'} _hover={{cursor : 'pointer'}}>
+            letterSpacing={'2px'} fontSize={['2xl','2xl','3xl','4xl']} bgGradient='linear(to-l, #7928CA, #FF0080)'  bgClip={'text'} _hover={{cursor : 'pointer'}}>
             <Link href={'/'} >
                 WAHEED
             </Link>
