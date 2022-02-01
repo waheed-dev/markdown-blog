@@ -4,13 +4,13 @@ import Link from 'next/link'
 const SelfInfo = () => {
     return (
         <Box mt={'20'}  mb={'10'} display={['block','flex','flex','flex']} justifyContent={'space-between'} flexDirection={'row-reverse'} alignContent={'center'}>
-            <Box >
-                <Box border={'2px'} mt={'4'} boxSize={['250','240','240','330']} display={'flex'} mx={"auto"} justifyContent={'center'} alignContent={'center'} borderColor={'green.400'} borderRadius={'full'}>
+            <Box mb={['8','0','0','0']}>
+                <Box border={'2px'} mt={'4'} boxSize={['250','250','300','330']} display={'flex'} mx={"auto"} justifyContent={'center'} alignContent={'center'} borderColor={'green.400'} borderRadius={'full'}>
                     <Image
                         mt={'8'}
                         src="/Saitama.png"
                         alt="Picture of the author"
-                        boxSize={['150','240','240','240']}
+                        boxSize={['170','170','200','240']}
                     />
 
                 </Box>
