@@ -4,7 +4,7 @@ import {Typewriter} from "react-simple-typewriter";
 const PortCta = () => {
     return (
         <Box display={'flex'} justifyContent={'center'}>
-            <ImQuotesLeft size={'30'}/>
+            <ImQuotesLeft size={'22'}/>
             <Heading textAlign={'center'} fontSize={['2xl','2xl','3xl','3xl']} my={'12'}
             >I can help make your site
                 <Heading fontSize={['2xl','2xl','3xl','3xl']} color={'green.500'} _dark={{color : 'green.400'}}
@@ -24,7 +24,7 @@ const PortCta = () => {
             </Heading>
             <Box alignSelf={'flex-end'}>
 
-            <ImQuotesRight size={'30'}/>
+            <ImQuotesRight size={'22'}/>
             </Box>
         </Box>
     )
