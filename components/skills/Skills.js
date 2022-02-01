@@ -24,9 +24,23 @@ const Skills = () => {
               <Box ml={['6','10','10','10']}>
                   <Tabs colorScheme={'green'} variant={'line'} size={'md'}>
                       <TabList display={'flex'} justifyContent={'space-evenly'}>
-                          <Tab>Frontend</Tab>
-                          <Tab>Backend</Tab>
-                          <Tab>Familiar with</Tab>
+                          <Tab>
+                              <Text fontWeight={'semibold'}>
+                              Frontend
+                              </Text>
+                          </Tab>
+                          <Tab >
+                          <Text fontWeight={'semibold'}>
+                              Backend
+                          </Text>
+
+                          </Tab>
+                          <Tab>
+
+                          <Text fontWeight={'semibold'}>
+                              Familiar with
+                          </Text>
+                          </Tab>
                       </TabList>
                       <TabPanels>
                           <TabPanel mt={'4'}>

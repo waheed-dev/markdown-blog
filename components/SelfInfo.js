@@ -1,4 +1,5 @@
-import {Box,Text,Image,Button} from "@chakra-ui/react";
+import {Box, Text, Image, Button} from "@chakra-ui/react";
+import Link from 'next/link'
 
 const SelfInfo = () => {
     return (
@@ -15,13 +16,17 @@ const SelfInfo = () => {
                 </Box>
             </Box>
             <Box gap={4} fontSize={'3xl'} fontWeight={'extrabold'} width={['','md','lg','lg']}>
-                <Text>Hi,My Name is <Text as={'span'} color={'green.600'} _dark={{color : 'green.400'}}>Waheed
+                <Text>Hi,My Name is <Text as={'span'} color={'green.500'} _dark={{color : 'green.400'}}>Waheed
                 </Text></Text>
                 <Text fontSize={'2xl'} color={'gray.500'}>Full Stack developer</Text>
                 <Text fontSize={'xl'} fontWeight={'normal'}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam et eveniet iusto nemo recusandae. Aut ex explicabo illum laborum mollitia odit officia, pariatur perspiciatis possimus quo, reiciendis sit vel veritatis!
                 </Text>
                 <Box display={'flex'} gap={6} mt={10}>
-                <Button  colorScheme={'green'}>Contact</Button>
+                        <Button bgColor={'green.500'} _hover={{backgroundColor : 'green.600'}} color={''} _dark={{backgroundColor : 'green.400'}}>
+                    <Link href={'#contact'} passHref>
+                            Contact
+                    </Link>
+                        </Button>
                 <Button variant={'outline'} colorScheme={'green'}>Resume</Button>
                 </Box>
             </Box>

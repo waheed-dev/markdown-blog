@@ -110,10 +110,10 @@ export const ContactForm = () =>  {
     }
     return (
 
-        <Box mt={['14','18','20','20']}  mb={'10'}>
+        <Box mt={['14','18','20','20']}  mb={['-4','2','8','8']}>
 
             <Heading>Contact me</Heading>
-            <Box mt={['-12','2','10','10']}>
+            <Box mt={['-12','2','10','10']} id={'contact'}>
                 <Box ml={['6','10','10','10']}>
                     <Box
                         px={{
@@ -152,10 +152,10 @@ export const ContactForm = () =>  {
                             </Stack>
                             <FieldGroup mt={['-6','-4','1','1']}>
                                 <HStack width="full" gap={['2','2','4','4']}>
-                                    <Button type="submit"   px={['6','6','8','8']}  onClick={handleSubmit} colorScheme="green"  bgcolor={'green.600'} _dark={{backgroundColor : 'green.400'}}>
+                                    <Button type="submit"   px={['6','6','8','8']}  onClick={handleSubmit} bgColor={'green.500'} _hover={{backgroundColor : 'green.600'}} color={'white'} _dark={{backgroundColor : 'green.400'}}>
                                         Send
                                     </Button>
-                                    <Button variant="outline" px={['6','6','8','8']} onClick={ResetHandler}>Reset</Button>
+                                    <Button variant="outline" color={'green.500'} _dark={{color : 'green.400'}} px={['6','6','8','8']} onClick={ResetHandler}>Reset</Button>
                                 </HStack>
                             </FieldGroup>
                         </form>
