@@ -22,7 +22,7 @@ const SelfInfo = () => {
                 <Text fontSize={'xl'} fontWeight={'normal'}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam et eveniet iusto nemo recusandae. Aut ex explicabo illum laborum mollitia odit officia, pariatur perspiciatis possimus quo, reiciendis sit vel veritatis!
                 </Text>
                 <Box display={'flex'} gap={6} mt={10}>
-                        <Button bgColor={'green.500'} _hover={{backgroundColor : 'green.600'}} color={''} _dark={{backgroundColor : 'green.400'}}>
+                        <Button bgColor={'green.500'} _hover={{backgroundColor : 'green.600'}} color={'white'} _dark={{backgroundColor : 'green.400'}}>
                     <Link href={'#contact'} passHref>
                             Contact
                     </Link>

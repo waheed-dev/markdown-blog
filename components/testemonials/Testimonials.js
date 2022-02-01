@@ -145,18 +145,16 @@ export const Testimonials = () => {
                         colorScheme="blue"
                         image="/fahrudi.jpeg"
                     >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        So glad I could finally experience the superb quality myself and I was quite impressed by the speed,thoughtfulness and the communication skills of the developer.
                     </Testimonial>
                     <Testimonial
                         logo={<ChatMonkey h="6" color="gray.400" />}
-                        author="Johanna Kate"
+                        author="Eike Winer"
                         role="Marketing Manager, Chat Monkey"
                         colorScheme="pink"
                         image="https://images.unsplash.com/photo-1486116736668-6384736c9330?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTA3fHxsYWR5JTIwaGVhZHNob3R8ZW58MHx8MHw%3D&auto=format&fit=crop&w=800&q=60"
                     >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        "Was amazed to see how effective our new site was our customer retention improved by 22% in month one Alone without increasing any marketing budget.<br/>Overall very impressive"
                     </Testimonial>
                 </SimpleGrid>
             </Box>

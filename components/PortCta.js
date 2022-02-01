@@ -6,11 +6,11 @@ const PortCta = () => {
         <Box display={'flex'} justifyContent={'center'}>
             <ImQuotesLeft size={'30'}/>
             <Heading textAlign={'center'} fontSize={['2xl','2xl','3xl','3xl']} my={'12'}
-            >In order to be irreplaceable, one must always be
+            >I can help make your site
                 <Heading fontSize={['xl','xl','2xl','3xl']} color={'green.500'} _dark={{color : 'green.400'}}
                             fontWeight={'bold'}>
                     <Typewriter
-                        words={['Different','Learning','Efficient','Creative','Discipline']}
+                        words={['more fast','Generate more revenue','more secure','Rank better and have better SEO']}
                         loop={5}
                         cursor
                         cursorStyle='_'

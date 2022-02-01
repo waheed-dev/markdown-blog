@@ -110,11 +110,11 @@ export const ContactForm = () =>  {
     }
     return (
 
-        <Box mt={['14','18','20','20']}  mb={['-4','2','8','8']}>
+        <Box mt={['10','16','18','18']}  mb={['-4','2','8','8']}>
 
             <Heading>Contact me</Heading>
-            <Box mt={['-12','2','10','10']} id={'contact'}>
-                <Box ml={['6','10','10','10']}>
+            <Box mt={['-16','-6','2','6']} id={'contact'}>
+                <Box ml={['6','','-20','-20']}>
                     <Box
                         px={{
                             base: '4',
