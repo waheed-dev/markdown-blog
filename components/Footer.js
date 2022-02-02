@@ -21,13 +21,6 @@ const Footer = () => {
                 <Text fontSize={'sm'} mb={'2'}>developed and designed by Abdul Waheed</Text>
                 <Text fontStyle={'italic'} color={'gray.500'} fontSize={'sm'}>© 2022,All rights reserved.</Text>
                 <Button bgColor={'green.500'} _hover={{backgroundColor : 'green.600'}} color={'white'} _dark={{backgroundColor : 'green.400'}} onClick={scrollToTop} mt={'6'} >Back to top</Button>
-                <Box display={'flex'} justifyContent={'center'} gap={'1'} alignItems={'center'} mb={'2'} mt={'6'}>
-                    <Text fontSize={'xs'}>Made with <Link color={'blue.500'} fontSize={'sm'} href={'https://chakra-ui.com/'} isExternal>
-                        Chakra Ui
-                    </Link>
-                    </Text>
-                    <BiLinkExternal/>
-                </Box>
                 <Text fontSize={'xs'} mb={'2'} display={'flex'} justifyContent={'center'} alignItems={'center'} gap={'2'} mt={'8'}><AiOutlineWarning/> this site is currently under development</Text>
             </Box>
 
