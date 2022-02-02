@@ -25,15 +25,9 @@ export const BlogMeta = (props) => {
             letterSpacing="wider"
             fontWeight="semibold"
         >
-            <Badge colorScheme="blue" variant="solid" alignSelf="flex-start">
+            <Badge colorScheme="green"  variant="solid" alignSelf="flex-start">
                 {type}
             </Badge>
-            <HStack
-                divider={<StackDivider h="3" alignSelf="center" />}
-                spacing="3"
-                color={mode('gray.600', 'gray.400')}
-            >
-            </HStack>
         </Stack>
     )
 }

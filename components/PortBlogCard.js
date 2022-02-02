@@ -10,7 +10,7 @@ const PortBlogCard = ({title,excerpt,author,date,category,coverImg,slug}) => {
                 <Box
                     maxW={{
                         base: 'xl',
-                        md: '7xl',
+                        md: '7xl'
                     }}
                     mx="auto"
                     px={{
@@ -31,11 +31,11 @@ const PortBlogCard = ({title,excerpt,author,date,category,coverImg,slug}) => {
                     >
                         <Flex direction="column" h="full">
                             <Box flex="1">
-                                <Heading size="xl" mt={['2','4','6','6']} mb={['6','10','12','16']}>
+                                <Heading size="xl" mt={['2','4','6','6']} mb={['6','10','12','20']}>
                                     From the Blog
                                 </Heading>
-                                <BlogMeta type={category} />
-                                <Heading fontSize={['2xl','2xl','3xl','3xl']} mt={['','4','6','6']}  mb="4">
+          <BlogMeta type={category} />
+                                <Heading fontSize={['2xl','2xl','3xl','3xl']} mt={['','2','4','4']}  mb="4">
                                     {title}
                                 </Heading>
                                 <Text fontSize="lg" color={mode('gray.600', 'gray.400')} lineHeight="tall">
