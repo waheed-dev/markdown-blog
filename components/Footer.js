@@ -9,8 +9,8 @@ const Footer = () => {
     }
     return (
         <Box as={'footer'}>
-        <Flex justifyContent={'center'} pb={'8'} mt={'4'}>
-                <Tooltip label="Under development" aria-label='A tooltip' bg={'red.400'} defaultIsOpen={true} closeDelay={2500}>
+        <Flex justifyContent={'center'} pb={'10'} mt={''}>
+                <Tooltip label="Under development" aria-label='A tooltip' bg={'red.500'} defaultIsOpen={true} closeDelay={1500} hasArrow={true}>
             <Box display={'flex'} gridGap={'6'}>
 
                 <AiFillGithub size={'25'}/>
