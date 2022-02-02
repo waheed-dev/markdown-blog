@@ -10,7 +10,7 @@ const Footer = () => {
     return (
         <Box as={'footer'}>
         <Flex justifyContent={'center'} pb={'8'} mt={'4'}>
-                <Tooltip label="Under development" aria-label='A tooltip' bg={'red.400'} defaultIsOpen={true}>
+                <Tooltip label="Under development" aria-label='A tooltip' bg={'red.400'} defaultIsOpen={true} closeDelay={2500}>
             <Box display={'flex'} gridGap={'6'}>
 
                 <AiFillGithub size={'25'}/>
