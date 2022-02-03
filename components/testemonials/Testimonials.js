@@ -2,7 +2,7 @@ import {Box, Flex, Heading, Img, SimpleGrid, Text, useColorModeValue as mode} fr
 import * as React from 'react'
 import { ImQuotesLeft, ImQuotesRight } from 'react-icons/im'
 import { Plumtic, ChatMonkey } from './Logo'
-import {boxVariants, MotionBox, outerboxVariants} from "../helpers/helpers";
+import {boxVariants, MotionBox, opacityVariants, outerboxVariants} from "../helpers/helpers";
 import {useAnimation} from "framer-motion";
 import {useInView} from "react-intersection-observer";
 import {useEffect} from "react";
@@ -127,7 +127,10 @@ export const Testimonials = () => {
         }
     }, [controls, inView]);
     return (
-        <Box mt={['14','18','20','20']}  mb={'10'}>
+        <MotionBox ref={ref}
+                   animate={controls}
+                   initial="hidden"
+                   variants={opacityVariants}  mt={['14','18','20','20']}  mb={'10'}>
 
             <Heading>Testimonials</Heading>
             <Box mt={['10','16','18','20']}>
@@ -189,7 +192,7 @@ export const Testimonials = () => {
         </Box>
                 </Box>
             </Box>
-        </Box>
+        </MotionBox>
     )
 }
 export default Testimonials
