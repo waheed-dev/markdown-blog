@@ -7,7 +7,6 @@ import Header from "../../../components/header/Header";
 import Search from "../../../components/Search";
 import PostCard from "../../../components/PostCard";
 import { sortByDate } from "../../../Helpers";
-import Category from "../../../components/Category";
 import Pagination from "../../../components/Pagination";
 import {POST_PER_PAGE} from "../../../config";
 import Footer from "../../../components/Footer";
@@ -23,7 +22,6 @@ export default function Home({ posts,currentPage,numPages }) {
             <Header />
         </Box>
           <Search />
-          <Category />
           <Box paddingX={['8','12','16','20']} mt={"12"}>
             <SimpleGrid columns={['1','1','2','3']} spacing={6}>
               {posts.map((post) => (
