@@ -2,8 +2,13 @@ import {Box, Flex, Heading, Img, SimpleGrid, Text, useColorModeValue as mode} fr
 import * as React from 'react'
 import { ImQuotesLeft, ImQuotesRight } from 'react-icons/im'
 import { Plumtic, ChatMonkey } from './Logo'
+import {boxVariants, MotionBox, outerboxVariants} from "../helpers/helpers";
+import {useAnimation} from "framer-motion";
+import {useInView} from "react-intersection-observer";
+import {useEffect} from "react";
 
 const Testimonial = (props) => {
+
     const { logo, children, image, author, role, colorScheme: c } = props
     const accentColor = mode(`${c}.600`, `${c}.400`)
     return (
@@ -114,6 +119,13 @@ const Testimonial = (props) => {
 }
 
 export const Testimonials = () => {
+    const controls = useAnimation();
+    const [ref, inView] = useInView();
+    useEffect(() => {
+        if (inView) {
+            controls.start("visible");
+        }
+    }, [controls, inView]);
     return (
         <Box mt={['14','18','20','20']}  mb={'10'}>
 
@@ -138,6 +150,13 @@ export const Testimonials = () => {
                     }}
                     spacing="10"
                 >
+                    <MotionBox
+                        ref={ref}
+                        animate={controls}
+                        initial="hidden"
+                        variants={boxVariants}
+                    >
+
                     <Testimonial
                         logo={<Plumtic h="6" color="gray.400" />}
                         author="Fahrudi Budi Prasetyo"
@@ -147,6 +166,14 @@ export const Testimonials = () => {
                     >
                         So glad I could finally experience the superb quality myself and I was quite impressed by the speed,thoughtfulness and the communication skills of the developer.
                     </Testimonial>
+                    </MotionBox>
+                    <MotionBox
+                        ref={ref}
+                        animate={controls}
+                        initial="hidden"
+                        variants={outerboxVariants}
+                    >
+
                     <Testimonial
                         logo={<ChatMonkey h="6" color="gray.400" />}
                         author="Eike Winer"
@@ -156,6 +183,7 @@ export const Testimonials = () => {
                     >
                         "Was amazed to see how effective our new site was our customer retention improved by 22% in month one Alone without increasing any marketing budget.<br/>Overall very impressive"
                     </Testimonial>
+                    </MotionBox>
                 </SimpleGrid>
             </Box>
         </Box>

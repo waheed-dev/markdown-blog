@@ -20,10 +20,20 @@ import * as React from 'react'
 import { HiCloudUpload } from 'react-icons/hi'
 import { FaGithub, FaGoogle } from 'react-icons/fa'
 import { FieldGroup } from './FieldGroup'
-import {useState} from "react";
+import {useEffect, useState} from "react";
+import {useAnimation} from "framer-motion";
+import {useInView} from "react-intersection-observer";
+import {imageVariants, MotionBox, opacityVariants} from "../helpers/helpers";
 
 
 export const ContactForm = () =>  {
+    const controls = useAnimation();
+    const [ref, inView] = useInView();
+    useEffect(() => {
+        if (inView) {
+            controls.start("visible");
+        }
+    }, [controls, inView]);
     const toast = useToast()
     const [name, setName] = useState()
     const [email, setEmail] = useState()
@@ -110,7 +120,10 @@ export const ContactForm = () =>  {
     }
     return (
 
-        <Box mt={['10','16','18','18']}  mb={['-4','2','8','8']}>
+        <MotionBox ref={ref}
+                   animate={controls}
+                   initial="hidden"
+                   variants={opacityVariants} mt={['10','16','18','18']}  mb={['-4','2','8','8']}>
 
             <Heading>Contact me</Heading>
             <Box mt={['-16','-6','2','6']} id={'contact'}>
@@ -162,7 +175,7 @@ export const ContactForm = () =>  {
                     </Box>
                 </Box>
             </Box>
-        </Box>
+        </MotionBox>
 
     )
 

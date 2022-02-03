@@ -1,8 +1,20 @@
 import {Box, Image, Text, Heading, Button} from "@chakra-ui/react";
 import Link from 'next/link'
 import { AiFillGithub } from "react-icons/ai";
+import {useAnimation} from "framer-motion";
+import {useInView} from "react-intersection-observer";
+import {useEffect} from "react";
+import {boxVariants, imageVariants, MotionBox, MotionImage} from "../helpers/helpers";
+
 
 const Blog = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
   return (
     <Box
       mt={"20"}
@@ -10,16 +22,23 @@ const Blog = () => {
       justifyContent={"space-evenly"}
       gap={"4"}
       pb={"10"}
-
     >
-      <Image
+      <MotionImage
+          ref={ref}
+          animate={controls}
+          initial="hidden"
+          variants={imageVariants}
         src="/Blog.svg"
         alt="Picture of the author"
         boxSize={["150", "240", "240", "240"]}
         mx={"auto"}
         mb={"2"}
       />
-      <Box width={["", "md", "lg", "lg"]}>
+      <MotionBox
+          ref={ref}
+          animate={controls}
+          initial="hidden"
+          variants={boxVariants} width={["", "md", "lg", "lg"]}>
         <Heading>Markdown Blog</Heading>
         <Text fontSize={"2xl"} fontWeight={"bold"} color={"gray.500"}>
           Next js,Material ui,openMapWeatherApi
@@ -38,13 +57,12 @@ const Blog = () => {
             _dark={{ backgroundColor: "green.400" }}
           >
               <Link href={'/blog'}>
-
                   Live preview
               </Link>
           </Button>
           <AiFillGithub color={"#2f855a"} size={"40"} />
         </Box>
-      </Box>
+      </MotionBox>
     </Box>
   );
 };

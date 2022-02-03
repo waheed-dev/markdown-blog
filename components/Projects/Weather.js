@@ -1,7 +1,25 @@
 import {Box, Image, Text, Heading, Button, Link} from "@chakra-ui/react";
 import { AiFillGithub } from "react-icons/ai";
+import {
+  boxVariants,
+  imageVariants,
+  MotionBox,
+  MotionImage,
+  outerboxVariants,
+  outerimageVariants
+} from "../helpers/helpers";
+import {useAnimation} from "framer-motion";
+import {useInView} from "react-intersection-observer";
+import {useEffect} from "react";
 
 const Weather = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
   return (
     <Box
       mt={"20"}
@@ -12,14 +30,22 @@ const Weather = () => {
       justifyContent={"space-evenly"}
       gap={"4"}
     >
-      <Image
+      <MotionImage
+          ref={ref}
+          animate={controls}
+          initial="hidden"
+          variants={imageVariants}
         src="/Weather.svg"
         alt="Picture of the author"
         boxSize={["150", "240", "240", "240"]}
         mx={"auto"}
         mb={"2"}
       />
-      <Box width={["", "md", "lg", "lg"]}>
+      <MotionBox
+          ref={ref}
+          animate={controls}
+          initial="hidden"
+          variants={boxVariants} width={["", "md", "lg", "lg"]}>
         <Heading>Weather Application</Heading>
         <Text fontSize={"2xl"} fontWeight={"bold"} color={"gray.500"}>
           Next js,Material ui,openMapWeatherApi
@@ -44,7 +70,7 @@ const Weather = () => {
           </Button>
           <AiFillGithub color={"#2f855a"} size={"40"} />
         </Box>
-      </Box>
+      </MotionBox>
     </Box>
   );
 };
