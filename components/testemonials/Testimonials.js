@@ -127,10 +127,10 @@ export const Testimonials = () => {
         }
     }, [controls, inView]);
     return (
-        <MotionBox ref={ref}
-                   animate={controls}
-                   initial="hidden"
-                   variants={opacityVariants}  mt={['14','18','20','20']}  mb={'10'}>
+        <MotionBox  ref={ref}
+                    animate={controls}
+                    initial="hidden"
+                    variants={boxVariants}>
 
             <Heading>Testimonials</Heading>
             <Box mt={['10','16','18','20']}>
@@ -154,10 +154,7 @@ export const Testimonials = () => {
                     spacing="10"
                 >
                     <MotionBox
-                        ref={ref}
-                        animate={controls}
-                        initial="hidden"
-                        variants={boxVariants}
+
                     >
 
                     <Testimonial
@@ -171,10 +168,7 @@ export const Testimonials = () => {
                     </Testimonial>
                     </MotionBox>
                     <MotionBox
-                        ref={ref}
-                        animate={controls}
-                        initial="hidden"
-                        variants={outerboxVariants}
+
                     >
 
                     <Testimonial
