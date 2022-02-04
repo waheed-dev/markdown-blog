@@ -22,7 +22,7 @@ const Search = () => {
          <Box display={'flex'} justifyContent={'center'}>
              <form>
                  <FormLabel>Search</FormLabel>
-                 <Input type="search" id={'search'} value={searchInput} onChange={ (e) => {setSearchInput(e.target.value)}} width={['xxs','xs','md','lg']}  maxLength={255} />
+                 <Input value={searchInput} onChange={ (e) => {setSearchInput(e.target.value)}} width={['xxs','xs','md','lg']}  maxLength={255} />
              </form>
              <SearchResults results={searchResults}/>
          </Box>
