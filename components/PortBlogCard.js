@@ -35,7 +35,7 @@ const PortBlogCard = ({title,excerpt,author,date,category,coverImg,slug}) => {
                                     From the Blog
                                 </Heading>
           <BlogMeta type={category} />
-                                <Heading fontSize={['2xl','2xl','3xl','3xl']} mt={['','2','4','4']}  mb="4">
+                                <Heading fontSize={['2xl','2xl','3xl','3xl']} mt={['1','2','4','4']}  mb="4">
                                     {title}
                                 </Heading>
                                 <Text fontSize="lg" color={mode('gray.600', 'gray.400')} lineHeight="tall">
