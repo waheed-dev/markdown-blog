@@ -13,7 +13,7 @@ const postData = () => {
             frontMatter
         }
     })
-    return `export const posts = ${JSON.stringify(posts)}`
+    return `export const posts = ${JSON.stringify(files)}`
 }
 try {
     fs.readdirSync('cache')
