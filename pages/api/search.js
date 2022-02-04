@@ -5,7 +5,7 @@ import path from "path";
 export default function handler(req, res) {
   let files
  if (process.env.NODE_ENV=== 'production') {
-
+ files = require('../../cache/data').posts
  } else {
    const posts = fs.readdirSync(path.join('posts'))
    files = posts.map(fileName => {
