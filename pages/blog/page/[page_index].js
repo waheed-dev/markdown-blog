@@ -10,6 +10,7 @@ import { sortByDate } from "../../../Helpers";
 import Pagination from "../../../components/Pagination";
 import {POST_PER_PAGE} from "../../../config";
 import Footer from "../../../components/Footer";
+import SearchResults from "../../../components/SearchResult";
 
 export default function Home({ posts,currentPage,numPages }) {
     return (
