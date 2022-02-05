@@ -8,7 +8,7 @@ const Footer = () => {
         });
     }
     return (
-        <Box as={'footer'}>
+        <Box as={'footer'} mt={'4'}>
         <Flex justifyContent={'center'} pb={'10'} mt={''}>
                 <Tooltip label="Under development" aria-label='A tooltip' bg={'red.500'} closeDelay={2000} IsOpen={true}  hasArrow={true}>
             <Box display={'flex'} gridGap={'6'}>

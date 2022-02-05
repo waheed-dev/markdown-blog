@@ -1,5 +1,5 @@
 ---
-title: "React libraries/frameworks that every React developer should know"
+title: "React libraries that every React developer should know"
 date: "Feb 2, 2022"
 excerpt: "Libraries that will give you superpowers"
 cover_image: "/images/posts/img5.jpg"

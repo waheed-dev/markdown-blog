@@ -11,7 +11,7 @@ import ChakraUIRenderer from "chakra-ui-markdown-renderer";
 import Footer from "../../components/Footer";
 
 
-export default function PostDetails({frontmatter,content}) {
+export default function PostDetails({frontmatter,content,}) {
     console.log(frontmatter)
     return (
         <Box mb={'4'}>
