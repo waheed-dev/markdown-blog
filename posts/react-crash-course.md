@@ -1,62 +1,75 @@
 ---
-title: 'React Crash Course'
-date: 'May 8, 2021'
-excerpt: 'Crash course to learn the React JavaScript library. We will look at components, hooks and more'
-cover_image: '/images/posts/img5.jpg'
-category: 'JavaScript'
-author: 'Jane Doe'
-author_image: 'https://randomuser.me/api/portraits/women/11.jpg'
+title: "React libraries/frameworks that every React developer should know"
+date: "Feb 2, 2022"
+excerpt: "Libraries that will give you superpowers"
+cover_image: "/images/posts/img5.jpg"
+category: "JavaScript"
+author: "Abdul Waheed"
 ---
 
-<!-- Markdow generator - https://jaspervdj.be/lorem-markdownum/ -->
+React has been dominating Javascript and web for long and rightly so.
+With many great features and community support to do just about anything React has it all from building web application to mobile apps.
 
-Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat
-haec praepes [partes epulae](http://cui.com/), in egisse de. Caecisque ter
-manus. Munere in exhalat, ferre sed [habe quaeque saepe](http://ne.org/fretum)
-verba caput ferarum _nubila_? Patriam Cyparisse tamen, **saxum** fide postponere
-pavida ne omnes etiam, atque. Sonuit omina sed sine haerebat illic fit a mora
-in.
+below are some of my favorite libraries
 
-1. Serrae enim Etruscam aquis
-2. Et premis et flumine frontem minatur oppressos
-3. Inquam rector Icarus possum vim tumulo propiusque
-4. Vulnus se Latreus
-5. Aptumque bis
+1. Next.js
+2. Redux Toolkit
+3. Chakra Ui
+5. Framer Motion
 
-## Turpius Aegides membris colat volentes fallere
+# React frameworks
 
-Ille fida formosus, et addunt viscera perdidit ad pondere quia tellus
-consequitur et quoque scinditque in. Ratis laborum instabat quaedam partem
-Phoebus, manus _partibus poenas_. Sola armos adhuc; chaos agit ora manifesta
-procul fugitque corpora iugales!
+## Next.js
 
-    var ethics_font_drive = cycleSystemProgram + deprecatedTransferIp.ide(3) /
-            rgb + nybbleBaseband;
-    permalinkCertificateMacintosh(ergonomicsIsdnDns);
-    boot = bridgeDaemonActive;
+**_The React Framework
+for Production_**
 
-## O contra diu
+Next.js has truly taken over React with its hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more.
 
-Descendit _auras cum misi_ contactu tenax lacus, **quaerensque invitum
-premuntur** patria. Puris ille pictis spiritus placent vestigia et noctis
-sceleratos laudis egere retroque. Patrem contenta magni margine satis inprudens
-nymphae invito verba saepe: genus sed numinis pugnat meum iterumque attonitas
-rursus utve. Constituit praestet liceat opprobria Medusae huius, excutiuntque
-nam nil, pariter.
+Next.js is also great for SEO (Search Engine Optimization) since its rendering HTML on the server and then sending it to the client. This pre-rendering allows search engine crawler to get all the HTML from the server.
 
-Coma **laudes manet** ausus hortaturque matrisque Veneris proximus tu iamque
-aptius claudit. Tmolus tetigere iussos animumque quid poplite Hippotaden? Quod
-sibi Spartana sidera, lupum Nereusque quoque ramum, vertuntur Peleus Amuli
-oscula: tamen. Surgere Epidaurius movit crede soceri Euboicam quoque.
+**Honorable mentions**
 
-Unde stabant, acuta, percussit denique; hoc illic et herbis minimas parvum? Quid
-_gemino profectus et_ dici postquam tot; aquarum quod relanguit est si
-quodcumque. Ossaque protinus, quod somno est, repetit, hoc passu est. Qui devia;
-respice humum vobis oscula, in Lotis nymphae.
+- Remix.js
+- Gatsby.js
 
-Dolet certamina velle dexteriore mutatus saepe, tellure ubi unguibus, gestu.
-Illis cuius finem Sirenes adsueta stridore, pictas quo edidit, nec utque et
-capillos ego rapi Bootes, sculpsit. Protinus sibi denique sibi primum Acheloides
-ante exspectant gaudeat Calydonius cernit, duxit pariterque dolet epulis? Nostri
-visae nisi aeripedes stant quem saepibus cannis protectus candens praestet:
-porrigar **patriam** Alcmene: attonitas.
+# State management
+
+## Redux Toolkit
+
+**_The official, opinionated, batteries-included toolset for efficient Redux development_**
+
+A predictable, standalone state container for JavaScript apps which helps you write applications that behave consistently and run in different environments. where you can describe your UI as a function of your state and make Redux keep track of your components state and update them accordingly in response to UI actions.
+
+Redux is definitely the most popular choice when it comes to state management with React with almost 5 million weekly downloads on NPM.
+
+Redux Toolkit is the new standard way to write Redux logic. It eliminates around 1/4 boilerplate that was required with vanilla Redux no more having to define hundreds of files for each action.
+
+**Honorable mentions**
+
+- Zustand
+- Recoil
+- MobX
+
+# Component Library
+
+##Chakra Ui
+
+**_Create accessible React apps with speed_**
+
+Chakra ui is a React Component library.  Chakra UI uses CSS-in-JS under the hood ( emotion + styled-system ), which gives you access to style props – which are a 10x boost in productivity and the docs are very detailed and very well documented. 
+
+All components are dark mode compatible by default and are also themeable. Chakra UI supports responsive styles out of the box. Instead of manually adding @media queries and adding nested styles throughout your code, Chakra UI allows you to provide object and array values to add mobile-first responsive styles.
+
+ What I personally like about Chakra Ui that its so easy to use and customize I’ve used about every component library out there for react. Chakra is by far my favorite and go to.
+
+**Honorable mentions**
+
+- Material Ui
+- Mantine
+- AntD
+
+
+
+
+

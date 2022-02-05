@@ -14,7 +14,7 @@ import Footer from "../../components/Footer";
 export default function PostDetails({frontmatter,content}) {
     console.log(frontmatter)
     return (
-        <div>
+        <Box mb={'4'}>
             <Head>
                 <title>{frontmatter.title}</title>
             </Head>
@@ -33,7 +33,7 @@ export default function PostDetails({frontmatter,content}) {
                 </Box>
                 <Footer/>
             </Box>
-        </div>
+        </Box>
     )
 }
 
