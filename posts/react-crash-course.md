@@ -15,9 +15,9 @@ below are some of my favorite libraries
 1. Next.js
 2. Redux Toolkit
 3. Chakra Ui
-5. Framer Motion
 
-# React frameworks
+
+1. #React frameworks
 
 ## Next.js
 
@@ -33,7 +33,7 @@ Next.js is also great for SEO (Search Engine Optimization) since its rendering H
 - Remix.js
 - Gatsby.js
 
-# State management
+2. # State management
 
 ## Redux Toolkit
 
@@ -51,9 +51,9 @@ Redux Toolkit is the new standard way to write Redux logic. It eliminates around
 - Recoil
 - MobX
 
-# Component Library
+3. # Component Library
 
-##Chakra Ui
+## Chakra Ui
 
 **_Create accessible React apps with speed_**
 
