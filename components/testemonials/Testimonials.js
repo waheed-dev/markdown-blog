@@ -9,7 +9,7 @@ import {useEffect} from "react";
 const Testimonial = (props) => {
 
     const { children, image, author, role, colorScheme: c } = props
-    const accentColor = mode(`${c}.600`, `${c}.400`)
+    const accentColor = mode(`${c}.500`, `${c}.400`)
     return (
         <Flex
             direction="column"
@@ -170,7 +170,7 @@ export const Testimonials = () => {
                     <Testimonial
                         author="Eike Wagenfeld"
                         colorScheme="green"
-                        image="https://images.unsplash.com/photo-1486116736668-6384736c9330?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTA3fHxsYWR5JTIwaGVhZHNob3R8ZW58MHx8MHw%3D&auto=format&fit=crop&w=800&q=60"
+                        image="https://randomuser.me/api/portraits/men/42.jpg"
                     >
                         "Was amazed to see how effective our new site was our customer retention improved by 22% in month one Alone without increasing any marketing budget.<br/>Overall very impressive"
                     </Testimonial>
