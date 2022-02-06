@@ -18,9 +18,7 @@ export default function handler(req, res) {
      }
    })
  }
- const results = files.filter(({frontMatter : {title,excerpt,category}}) => title.toLowerCase().indexOf(req.query.q) !== -1 ||
-  excerpt.toLowerCase().indexOf(req.query.q) !== -1 ||
-  category.toLowerCase().indexOf(req.query.q) !== -1
+ const results = files.filter(({frontMatter : {title,excerpt,category}}) => title.toLowerCase().indexOf(req.query.q) !== -1
  )
   console.log(results)
   res.status(200).json(JSON.stringify({results}))

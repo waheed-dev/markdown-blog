@@ -1,7 +1,7 @@
 ---
 title: "React libraries that every React developer should know"
 date: "Feb 2, 2022"
-excerpt: "Libraries that will give you superpowers"
+excerpt: "Libraries that will supercharge your next React project"
 cover_image: "/images/posts/img5.jpg"
 category: "JavaScript"
 author: "Abdul Waheed"
@@ -17,7 +17,7 @@ below are some of my favorite libraries
 3. Chakra Ui
 
 
-##1.React frameworks
+## 1. React frameworks
 
 ### Next.js
 
@@ -34,7 +34,7 @@ Next.js is also great for SEO (Search Engine Optimization) since its rendering H
 - Gatsby.js
 
 
-##2.State management
+## 2. State management
 
 ### Redux Toolkit
 
@@ -52,7 +52,7 @@ Redux Toolkit is the new standard way to write Redux logic. It eliminates around
 - Recoil
 - MobX
 
-##3.  Component Library
+## 3. Component Library
 
 ### Chakra Ui
 
