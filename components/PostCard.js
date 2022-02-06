@@ -1,6 +1,5 @@
 import { Box, Image, Text } from "@chakra-ui/react";
 import Link from "next/link";
-import CategoryLabel from "./CategoryLabel";
 
 const PostCard = ({ title, author, date, coverImg, category, excerpt,slug}) => {
   return (
@@ -24,7 +23,6 @@ const PostCard = ({ title, author, date, coverImg, category, excerpt,slug}) => {
       />
       <Box display={"flex"} justifyContent={"space-between"} mb={"2"} mt={"2"}>
         <Text color={"gray.600"}>{date}</Text>
-        <CategoryLabel>{category}</CategoryLabel>
         <Text fontWeight={"medium"}>{author}</Text>
       </Box>
       <Text fontSize={"26"} fontWeight={"medium"} mb={"2"}>
