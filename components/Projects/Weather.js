@@ -24,8 +24,6 @@ const Weather = () => {
     <Box
       mt={"20"}
       pb={"6"}
-      borderBottom={["1px", "0px", "0px", "0px"]}
-      borderColor={"green.600"}
       display={["block", "flex", "flex", "flex"]}
       justifyContent={"space-evenly"}
       gap={"4"}

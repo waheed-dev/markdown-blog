@@ -26,8 +26,7 @@ const Budget = () => {
       display={["block", "flex", "flex", "flex"]}
       justifyContent={"space-evenly"}
       pb={"6"}
-      borderBottom={["1px", "0px", "0px", "0px"]}
-      borderColor={"green.600"}
+
       flexDirection={"row-reverse"}
       gap={"4"}
     >
