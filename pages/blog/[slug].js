@@ -27,7 +27,7 @@ export default function PostDetails({frontmatter,content,}) {
                     <Heading>{frontmatter.title}</Heading>
                     <Text mt={'2'} fontSize={'lg'} _dark={{color : 'gray.400'}} color={'gray.600'}>{frontmatter.date}</Text>
                     <Image mt={'4'} src={frontmatter.cover_image} alt={'cover image'} />
-                    <Text fontSize={'lg'} mt={'6'}>
+                    <Text fontSize={'lg'} mt={'6'} mb={'20'}>
                         <ReactMarkdown components={ChakraUIRenderer()}>{content}</ReactMarkdown>
                     </Text>
                 </Box>

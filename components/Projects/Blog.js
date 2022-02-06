@@ -40,14 +40,12 @@ const Blog = () => {
           initial="hidden"
           variants={boxVariants} width={["", "md", "lg", "lg"]}>
         <Heading>Markdown Blog</Heading>
-        <Text fontSize={"2xl"} fontWeight={"bold"} color={"gray.500"}>
-          Next js,Material ui,openMapWeatherApi
+        <Text fontSize={["xl", "xl", "2xl", "2xl"]} fontWeight={"bold"} color={"gray.500"}>
+          Next.js,Chakra ui,Markdown
         </Text>
         <Text fontSize={"lg"} mt={"4"} mb={"10"}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
-          dolores eaque esse quibusdam quod soluta. Lorem ipsum dolor sit amet,
-          consectetur adipisicing elit. Corporis eius iusto minima pariatur
-          perspiciatis rem.
+
+          A hobby project to improve my writing skills and to document my learning
         </Text>
         <Box display={"flex"} gap={"12"}>
           <Button

@@ -48,14 +48,12 @@ const Budget = () => {
           initial="hidden"
           variants={boxVariants} width={["", "md", "lg", "lg"]}>
         <Heading>Budget Application</Heading>
-        <Text fontSize={"2xl"} fontWeight={"bold"} color={"gray.500"}>
-          Next js,Material ui,openMapWeatherApi
+        <Text fontSize={["xl", "xl", "2xl", "2xl"]} fontWeight={"bold"} color={"gray.500"}>
+          React,React-bootstrap
         </Text>
         <Text fontSize={"lg"} mt={"4"} mb={"10"}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
-          dolores eaque esse quibusdam quod soluta. Lorem ipsum dolor sit amet,
-          consectetur adipisicing elit. Corporis eius iusto minima pariatur
-          perspiciatis rem.
+          This simple React app has it all from custom hooks to custom context and prop drilling and more <br/>
+          We can stuff like adding expenses,removing expenses and creating budget
         </Text>
         <Box display={"flex"} gap={"12"}>
           <Button

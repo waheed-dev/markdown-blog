@@ -1,5 +1,4 @@
-import { Box, Text, Image, Button } from "@chakra-ui/react";
-import Link from "next/link";
+import { Box, Text, Image, Button,Link} from "@chakra-ui/react";
 import { motion,useAnimation} from 'framer-motion'
 import { useInView } from "react-intersection-observer";
 import {useEffect} from "react";
@@ -76,13 +75,11 @@ const SelfInfo = () => {
           </Text>
         </Text>
         <Text fontSize={["xl", "xl", "2xl", "2xl"]} color={"gray.500"}>
-          Full Stack developer
+          Mern stack developer
         </Text>
         <Text fontSize={"xl"} fontWeight={"normal"}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam et
-          eveniet iusto nemo recusandae. Aut ex explicabo illum laborum mollitia
-          odit officia, pariatur perspiciatis possimus quo, reiciendis sit vel
-          veritatis!
+         i'm a Computer science Graduate having 16 years education and a Mern stack developer having a ton of experience in designing and developing production grade React and next.js web applications. <br/>
+          I also have experience working with cms like Wordpress and also developing and designing shopify stores.
         </Text>
         <Box display={"flex"} gap={6} mt={10}>
           <Button
@@ -91,12 +88,21 @@ const SelfInfo = () => {
             color={"white"}
             _dark={{ backgroundColor: "green.400" }}
           >
-            <Link href={"#contact"} passHref>
+            <Link _hover={{textDecoration:'none'}} href={"#contact"} passHref>
               Contact
             </Link>
           </Button>
-          <Button variant={"outline"} colorScheme={"green"}>
-            Resume
+          <Button
+              variant={'outline'}
+              bgColor={"green.500"}
+              _hover={{ backgroundColor: "green.600" }}
+              color={"white"}
+              _dark={{ backgroundColor: "green.400" }}
+          >
+            <Link _hover={{textDecoration:'none'}} href={'https://drive.google.com/u/0/uc?id=1QVVDmEWWlXtw4sQloLRCIHO1eL7by1Tc&export=download'} isExternal={true}>
+Resume
+
+            </Link>
           </Button>
         </Box>
       </MotionBox>

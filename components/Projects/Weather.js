@@ -47,14 +47,11 @@ const Weather = () => {
           initial="hidden"
           variants={boxVariants} width={["", "md", "lg", "lg"]}>
         <Heading>Weather Application</Heading>
-        <Text fontSize={"2xl"} fontWeight={"bold"} color={"gray.500"}>
+        <Text fontSize={["xl", "xl", "2xl", "2xl"]} fontWeight={"bold"} color={"gray.500"}>
           Next js,Material ui,openMapWeatherApi
         </Text>
         <Text fontSize={"lg"} mt={"4"} mb={"10"}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
-          dolores eaque esse quibusdam quod soluta. Lorem ipsum dolor sit amet,
-          consectetur adipisicing elit. Corporis eius iusto minima pariatur
-          perspiciatis rem.
+          This web application fetches real time weather data from openMapWeatherApi of user entered location and then displays result.
         </Text>
         <Box display={"flex"} gap={"12"}>
           <Button
