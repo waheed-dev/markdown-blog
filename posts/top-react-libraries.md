@@ -17,7 +17,7 @@ below are some of my favorite libraries
 3. Chakra Ui
 
 
-##1. React frameworks
+##1.React frameworks
 
 ### Next.js
 
@@ -33,7 +33,8 @@ Next.js is also great for SEO (Search Engine Optimization) since its rendering H
 - Remix.js
 - Gatsby.js
 
-##2.  State management
+
+##2.State management
 
 ### Redux Toolkit
 
