@@ -1,7 +1,6 @@
 import {Box, Flex, Heading, Img, SimpleGrid, Text, useColorModeValue as mode} from '@chakra-ui/react'
 import * as React from 'react'
 import { ImQuotesLeft, ImQuotesRight } from 'react-icons/im'
-import { Plumtic, ChatMonkey } from './Logo'
 import {boxVariants, MotionBox, opacityVariants, outerboxVariants} from "../helpers/helpers";
 import {useAnimation} from "framer-motion";
 import {useInView} from "react-intersection-observer";
@@ -9,7 +8,7 @@ import {useEffect} from "react";
 
 const Testimonial = (props) => {
 
-    const { logo, children, image, author, role, colorScheme: c } = props
+    const { children, image, author, role, colorScheme: c } = props
     const accentColor = mode(`${c}.600`, `${c}.400`)
     return (
         <Flex
@@ -31,7 +30,6 @@ const Testimonial = (props) => {
                 pb="6"
                 px="10"
             >
-                <Box mb="2">{logo}</Box>
                 <Box as="blockquote" maxW="340px" mx="auto" my="4">
                     <Box
                         position="absolute"
@@ -111,7 +109,6 @@ const Testimonial = (props) => {
                     <Text as="h3" fontWeight="bold" fontSize="md">
                         {author}
                     </Text>
-                    <Text>{role}</Text>
                 </Box>
             </Flex>
         </Flex>
@@ -158,10 +155,9 @@ export const Testimonials = () => {
                     >
 
                     <Testimonial
-                        logo={<Plumtic h="6" color="gray.400" />}
                         author="Fahrudi Budi Prasetyo"
                         role="Chief Technology Officer, Astro Bike"
-                        colorScheme="blue"
+                        colorScheme="green"
                         image="/fahrudi.jpeg"
                     >
                         So glad I could finally experience the superb quality myself and I was quite impressed by the speed,thoughtfulness and the communication skills of the developer.
@@ -172,10 +168,8 @@ export const Testimonials = () => {
                     >
 
                     <Testimonial
-                        logo={<ChatMonkey h="6" color="gray.400" />}
-                        author="Eike Winer"
-                        role="Marketing Manager, Chat Monkey"
-                        colorScheme="pink"
+                        author="Eike Wagenfeld"
+                        colorScheme="green"
                         image="https://images.unsplash.com/photo-1486116736668-6384736c9330?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTA3fHxsYWR5JTIwaGVhZHNob3R8ZW58MHx8MHw%3D&auto=format&fit=crop&w=800&q=60"
                     >
                         "Was amazed to see how effective our new site was our customer retention improved by 22% in month one Alone without increasing any marketing budget.<br/>Overall very impressive"
