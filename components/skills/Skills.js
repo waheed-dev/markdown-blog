@@ -36,7 +36,7 @@ const Skills = () => {
       <Heading>Skills</Heading>
           <Box mt={['10','16','18','20']}>
               <Box ml={['6','10','10','10']}>
-                  <Tabs colorScheme={'green'} variant={'line'} size={'md'}>
+                  <Tabs colorScheme={'green'} variant={'enclosed'} size={'md'}>
                       <TabList display={'flex'} justifyContent={'space-evenly'}>
                           <Tab>
                               <Text fontWeight={'semibold'}>
