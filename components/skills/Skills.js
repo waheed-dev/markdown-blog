@@ -63,23 +63,23 @@ const Skills = () => {
                                           animate={controls}
                                           initial="hidden"
                                           variants={boxVariants}>
-                                  <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']}  my={'10'}><SiJavascript size={'25'} color={'#2f855a'}/> Javascript</Text>
-                                  <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']}  my={'10'}><SiReact size={'25'} color={'#2f855a'}/> React</Text>
-                                  <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']}  my={'10'}><SiTypescript size={'25'} color={'#2f855a'}/> Typescript</Text>
-                                  <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']}  my={'10'}><SiNextdotjs size={'25'} color={'#2f855a'}/> NextJS</Text>
-                                  <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']} my={'10'}><SiHtml5 size={'25'}  color={'#2f855a'}/> HTML5</Text>
-                                  <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']}  my={['16','10','10','10']}><SiCss3 size={'25'}  color={'#2f855a'}/> CSS3</Text>
+                                  <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']}  my={'10'}><SiJavascript size={'25'} /> Javascript</Text>
+                                  <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']}  my={'10'}><SiReact size={'25'}/> React</Text>
+                                  <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']}  my={'10'}><SiTypescript size={'25'} /> Typescript</Text>
+                                  <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']}  my={'10'}><SiNextdotjs size={'25'}/> NextJS</Text>
+                                  <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']} my={'10'}><SiHtml5 size={'25'}/> HTML5</Text>
+                                  <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']}  my={['16','10','10','10']}><SiCss3 size={'25'}/> CSS3</Text>
                               </MotionBox>
                               <MotionBox ref={ref}
                                          animate={controls}
                                          initial="hidden"
                                          variants={outerboxVariants}>
-                                  <Text fontSize={'lg'} display={'flex'} gap={['2','6','10','14']} my={'10'}><SiFigma size={'25'}  color={'#2f855a'}/> Figma</Text>
-                                  <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']} my={'10'}><SiTailwindcss size={'25'}  color={'#2f855a'}/> TailwindCss</Text>
-                                  <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']} my={'10'}><SiChakraui size={'25'}  color={'#2f855a'}/> ChakraUi</Text>
-                                  <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']} my={'10'}><SiMaterialui size={'25'}  color={'#2f855a'}/> MaterialUI</Text>
-                                  <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']} my={'10'}><SiFramer size={'25'}  color={'#2f855a'}/>Framer motion</Text>
-                                  <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']} my={'10'}><SiLess size={'25'}  color={'#2f855a'}/>Scss</Text>
+                                  <Text fontSize={'lg'} display={'flex'} gap={['2','6','10','14']} my={'10'}><SiFigma size={'25'} /> Figma</Text>
+                                  <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']} my={'10'}><SiTailwindcss size={'25'} /> TailwindCss</Text>
+                                  <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']} my={'10'}><SiChakraui size={'25'} /> ChakraUi</Text>
+                                  <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']} my={'10'}><SiMaterialui size={'25'} /> MaterialUI</Text>
+                                  <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']} my={'10'}><SiFramer size={'25'} />Framer motion</Text>
+                                  <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']} my={'10'}><SiLess size={'25'}/>Scss</Text>
                               </MotionBox>
                               </Box>
 
@@ -91,21 +91,21 @@ const Skills = () => {
                                          animate={controls}
                                          initial="hidden"
                                          variants={boxVariants}>
-                                  <Text fontSize={'lg'}  display={'flex'}  gap={['2','6','10','14']}  my={'10'}><SiNodedotjs size={'25'} color={'#2f855a'}/> Node</Text>
-                                  <Text fontSize={'lg'}  display={'flex'}  gap={['2','6','10','14']}  my={'10'}><SiExpress size={'25'} color={'#2f855a'}/> Express</Text>
-                                  <Text fontSize={'lg'}  display={'flex'}  gap={['2','6','10','14']}  my={'10'}><SiNestjs size={'25'} color={'#2f855a'}/> NestJS</Text>
-                                  <Text fontSize={'lg'}  display={'flex'}  gap={['2','6','10','14']}  my={'10'}><SiGraphql size={'25'}  color={'#2f855a'}/> GraphQl</Text>
-                                  <Text fontSize={'lg'}  display={'flex'}  gap={['2','6','10','14']}  my={'10'}><DiMongodb size={'25'}  color={'#2f855a'}/> MongoDB</Text>
+                                  <Text fontSize={'lg'}  display={'flex'}  gap={['2','6','10','14']}  my={'10'}><SiNodedotjs size={'25'} /> Node</Text>
+                                  <Text fontSize={'lg'}  display={'flex'}  gap={['2','6','10','14']}  my={'10'}><SiExpress size={'25'} /> Express</Text>
+                                  <Text fontSize={'lg'}  display={'flex'}  gap={['2','6','10','14']}  my={'10'}><SiNestjs size={'25'} /> Nest.jS</Text>
+                                  <Text fontSize={'lg'}  display={'flex'}  gap={['2','6','10','14']}  my={'10'}><SiGraphql size={'25'}/> GraphQl</Text>
+                                  <Text fontSize={'lg'}  display={'flex'}  gap={['2','6','10','14']}  my={'10'}><DiMongodb size={'25'}/> MongoDB</Text>
                               </MotionBox>
                               <MotionBox ref={ref}
                                          animate={controls}
                                          initial="hidden"
                                          variants={outerboxVariants}>
-                                  <Text fontSize={'lg'} display={'flex'}   gap={['2','6','10','14']} my={'10'}><SiPug size={'25'}  color={'#2f855a'}/>Pug</Text>
-                                  <Text fontSize={'lg'}  display={'flex'}  gap={['2','6','10','14']}  my={'10'}><SiPostgresql size={'25'}  color={'#2f855a'}/>Postgres</Text>
-                                  <Text fontSize={'lg'}  display={'flex'}  gap={['2','6','10','14']}  my={'10'}><SiPostman size={'25'}  color={'#2f855a'}/> Postman</Text>
-                                  <Text fontSize={'lg'}  display={'flex'}  gap={['2','6','10','14']}  my={'10'}><SiAuth0 size={'25'}  color={'#2f855a'}/>JWT</Text>
-                                  <Text fontSize={'lg'}  display={'flex'}  gap={['2','6','10','14']}  my={'10'}><SiNpm size={'25'}  color={'#2f855a'}/>NPM</Text>
+                                  <Text fontSize={'lg'} display={'flex'}   gap={['2','6','10','14']} my={'10'}><SiPug />Pug</Text>
+                                  <Text fontSize={'lg'}  display={'flex'}  gap={['2','6','10','14']}  my={'10'}><SiPostgresql />Postgres</Text>
+                                  <Text fontSize={'lg'}  display={'flex'}  gap={['2','6','10','14']}  my={'10'}><SiPostman /> Postman</Text>
+                                  <Text fontSize={'lg'}  display={'flex'}  gap={['2','6','10','14']}  my={'10'}><SiAuth0 />JWT</Text>
+                                  <Text fontSize={'lg'}  display={'flex'}  gap={['2','6','10','14']}  my={'10'}><SiNpm  />NPM</Text>
                               </MotionBox>
                               </Box>
 
@@ -116,19 +116,19 @@ const Skills = () => {
                                              animate={controls}
                                              initial="hidden"
                                              variants={boxVariants}>
-                                      <Text fontSize={'lg'}  display={'flex'}  gap={['2','6','10','14']}  my={'10'}><SiGithub size={'25'} color={'#2f855a'}/>Git & Github</Text>
-                                      <Text fontSize={'lg'}  display={'flex'}  gap={['2','6','10','14']}  my={'10'}><VscCode size={'25'} color={'#2f855a'}/>Vscode</Text>
-                                      <Text fontSize={'lg'}  display={'flex'}  gap={['2','6','10','14']}  my={'10'}><SiStrapi size={'25'} color={'#2f855a'}/>Strapi</Text>
-                                      <Text fontSize={'lg'}  display={'flex'}  gap={['2','6','10','14']}  my={'10'}><SiDocker size={'25'} color={'#2f855a'}/>Docker</Text>
+                                      <Text fontSize={'lg'}  display={'flex'}  gap={['2','6','10','14']}  my={'10'}><SiGithub size={'25'} />Git & Github</Text>
+                                      <Text fontSize={'lg'}  display={'flex'}  gap={['2','6','10','14']}  my={'10'}><VscCode size={'25'} />Vscode</Text>
+                                      <Text fontSize={'lg'}  display={'flex'}  gap={['2','6','10','14']}  my={'10'}><SiStrapi size={'25'}/>Strapi</Text>
+                                      <Text fontSize={'lg'}  display={'flex'}  gap={['2','6','10','14']}  my={'10'}><SiDocker size={'25'} />Docker</Text>
                                   </MotionBox>
                                   <MotionBox ref={ref}
                                              animate={controls}
                                              initial="hidden"
                                              variants={outerboxVariants}>
-                                      <Text fontSize={'lg'} display={'flex'}  gap={['2','6','10','14']} my={'10'}><SiC size={'25'}  color={'#2f855a'}/>C</Text>
-                                      <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']} my={['10','10','10','10']}><SiWebstorm size={'25'}  color={'#2f855a'}/>Webstorm</Text>
-                                      <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']} my={['10','10','10','10']}><SiWordpress size={'25'}  color={'#2f855a'}/>Wordpress</Text>
-                                      <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']} my={['10','10','10','10']}><SiKubernetes size={'25'}  color={'#2f855a'}/>Kubernetes</Text>
+                                      <Text fontSize={'lg'} display={'flex'}  gap={['2','6','10','14']} my={'10'}><SiC size={'25'}  />C</Text>
+                                      <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']} my={['10','10','10','10']}><SiWebstorm size={'25'}  />Webstorm</Text>
+                                      <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']} my={['10','10','10','10']}><SiWordpress size={'25'}  />Wordpress</Text>
+                                      <Text fontSize={'lg'}  display={'flex'} gap={['2','6','10','14']} my={['10','10','10','10']}><SiKubernetes size={'25'}  />Kubernetes</Text>
                                   </MotionBox>
                               </Box>
                           </TabPanel>

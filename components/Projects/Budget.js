@@ -66,7 +66,7 @@ const Budget = () => {
             Live preview
               </Link>
           </Button>
-          <AiFillGithub color={"#2f855a"} size={"40"} />
+          <AiFillGithub size={"40"} />
         </Box>
       </MotionBox>
     </Box>

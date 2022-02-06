@@ -1,4 +1,4 @@
-import {Box, Image, Text, Heading, Button, Link} from "@chakra-ui/react";
+import {Box, Image, Text, Heading, Button, Link,useColorModeValue as mode} from "@chakra-ui/react";
 import { AiFillGithub } from "react-icons/ai";
 import {
   boxVariants,
@@ -63,7 +63,7 @@ const Weather = () => {
                   Live preview
               </Link>
           </Button>
-          <AiFillGithub color={"#2f855a"} size={"40"} />
+          <AiFillGithub size={"40"} />
         </Box>
       </MotionBox>
     </Box>
