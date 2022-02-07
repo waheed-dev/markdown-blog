@@ -1,4 +1,4 @@
-import {Box, Heading, Text, Image, Button} from "@chakra-ui/react";
+import {Box, Heading, Text, Image, Button, Divider} from "@chakra-ui/react";
 import fs from 'fs'
 import Path from 'path'
 import matter from "gray-matter";
@@ -31,6 +31,7 @@ export default function PostDetails({frontmatter,content,}) {
                         <ReactMarkdown components={ChakraUIRenderer()}>{content}</ReactMarkdown>
                     </Text>
                 </Box>
+                <Divider mb={['10','10','18','20']}/>
                 <Footer/>
             </Box>
         </Box>

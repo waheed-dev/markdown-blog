@@ -61,12 +61,12 @@ const Budget = () => {
             color={"white"}
             _dark={{ backgroundColor: "green.400" }}
           >
-              <Link _hover={{textDecoration:'none'}} href={'https://react-budget-app-vert.vercel.app/'} isExternal={true}>
-
-            Live preview
-              </Link>
           </Button>
+
+              <Link _hover={{textDecoration:'none'}} href={'https://github.com/waheed-dev/react-budget-app'} isExternal={true}>
+
           <AiFillGithub size={"40"} />
+              </Link>
         </Box>
       </MotionBox>
     </Box>

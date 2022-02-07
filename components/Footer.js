@@ -12,8 +12,9 @@ const Footer = () => {
         <Flex justifyContent={'center'} pb={'10'} mt={''}>
                 <Tooltip label="Under development" aria-label='A tooltip' bg={'red.500'} closeDelay={2000} IsOpen={true}  hasArrow={true}>
             <Box display={'flex'} gridGap={'6'}>
-
+                <Link _hover={{textDecoration:'none'}} href={'https://github.com/waheed-dev/'} isExternal={true}>
                 <AiFillGithub size={'25'}/>
+                </Link>
                 <AiOutlineTwitter size={'25'} />
                 <AiFillLinkedin size={'25'}/>
             </Box>

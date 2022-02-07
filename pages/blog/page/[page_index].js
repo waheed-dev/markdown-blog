@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Head from "next/head";
-import { Box, SimpleGrid } from "@chakra-ui/react";
+import {Box, Divider, SimpleGrid} from "@chakra-ui/react";
 import Header from "../../../components/header/Header";
 import Search from "../../../components/Search";
 import PostCard from "../../../components/PostCard";
@@ -41,6 +41,7 @@ export default function Home({ posts,currentPage,numPages }) {
             <Box mt={6} mb={'8'}>
               <Pagination currentPage={currentPage} numPages={numPages} />
             </Box>
+              <Divider mb={['10','10','18','20']}/>
             <Footer />
           </Box>
       </div>

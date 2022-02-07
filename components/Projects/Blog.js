@@ -1,4 +1,4 @@
-import {Box, Image, Text, Heading, Button} from "@chakra-ui/react";
+import {Box, Image, Text, Heading, Button, Link as Hyper} from "@chakra-ui/react";
 import Link from 'next/link'
 import { AiFillGithub } from "react-icons/ai";
 import {useAnimation} from "framer-motion";
@@ -54,11 +54,14 @@ const Blog = () => {
             color={"white"}
             _dark={{ backgroundColor: "green.400" }}
           >
+
               <Link href={'/blog'}>
                   Live preview
               </Link>
           </Button>
+          <Hyper href={' https://github.com/waheed-dev/portfolio-and-markdown-blog/'} isExternal>
           <AiFillGithub size={"40"} />
+          </Hyper>
         </Box>
       </MotionBox>
     </Box>

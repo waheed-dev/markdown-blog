@@ -63,7 +63,9 @@ const Weather = () => {
                   Live preview
               </Link>
           </Button>
+          <Link _hover={{textDecoration:'none'}} href={'https://github.com/waheed-dev/Weather-app'} isExternal={true}>
           <AiFillGithub size={"40"} />
+          </Link>
         </Box>
       </MotionBox>
     </Box>
