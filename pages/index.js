@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import Head from "next/head";
-import {Box} from "@chakra-ui/react";
+import {Box, Divider} from "@chakra-ui/react";
 import Header from "../components/header/Header";
 import Footer from "../components/Footer";
 import matter from "gray-matter";
@@ -20,6 +20,7 @@ export default function Home({posts}) {
           <html style={{scrollBehavior : 'smooth'}}>
           <Head>
         <title>Waheed-portfolio</title>
+              <link rel="shortcut icon" href="favicon.jpg" />
       </Head>
           </html>
       <Box>
@@ -44,6 +45,7 @@ export default function Home({posts}) {
             <Skills/>
               <Testimonials/>
               <ContactForm/>
+              <Divider mb={['10','10','18','20']}/>
           <Footer/>
         </Box>
 
