@@ -61,10 +61,10 @@ const Budget = () => {
             color={"white"}
             _dark={{ backgroundColor: "green.400" }}
           >
+            Live preview
           </Button>
 
               <Link _hover={{textDecoration:'none'}} href={'https://github.com/waheed-dev/react-budget-app'} isExternal={true}>
-                Live preview
           <AiFillGithub size={"40"} />
               </Link>
         </Box>
