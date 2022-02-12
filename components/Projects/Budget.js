@@ -64,7 +64,7 @@ const Budget = () => {
           </Button>
 
               <Link _hover={{textDecoration:'none'}} href={'https://github.com/waheed-dev/react-budget-app'} isExternal={true}>
-
+                Live preview
           <AiFillGithub size={"40"} />
               </Link>
         </Box>
