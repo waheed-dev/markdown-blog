@@ -54,7 +54,7 @@ const SelfInfo = () => {
             src="/sellff.png"
               objectFit={'cover'}
             alt="Picture of the author"
-            boxSize={["220", "230", "250", "290"]}
+            boxSize={["230", "240", "260", "290"]}
           />
 
 
