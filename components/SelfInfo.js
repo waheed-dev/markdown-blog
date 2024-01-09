@@ -33,10 +33,11 @@ const SelfInfo = () => {
       <Box mb={["8", "0", "0", "0"]}>
         <Box
           border={"2px"}
-          mt={"-2"}
-          boxSize={["250", "250", "300", "330"]}
+          mt={"2"}
+          boxSize={["250", "250", "300", "380"]}
           display={"flex"}
           mx={"auto"}
+          backgroundColor={'gray.300'}
           justifyContent={"center"}
           alignContent={"center"}
           borderColor={"green.400"}
@@ -49,10 +50,11 @@ const SelfInfo = () => {
               animate={controls}
               initial="hidden"
               variants={imageVariants}
-            mt={"8"}
-            src="/Saitama.png"
+            mt={""}
+            src="/sellff.png"
+              objectFit={'cover'}
             alt="Picture of the author"
-            boxSize={["170", "170", "200", "240"]}
+            boxSize={["170", "170", "200", "300"]}
           />
 
 

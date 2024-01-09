@@ -1,18 +1,13 @@
-import {Box, Image, Text, Heading, Button, Link,useColorModeValue as mode} from "@chakra-ui/react";
+import {Box, Image, Text, Heading, Button, Link as Hyper} from "@chakra-ui/react";
+import Link from 'next/link'
 import { AiFillGithub } from "react-icons/ai";
-import {
-  boxVariants,
-  imageVariants,
-  MotionBox,
-  MotionImage,
-  outerboxVariants,
-  outerimageVariants
-} from "../helpers/helpers";
 import {useAnimation} from "framer-motion";
 import {useInView} from "react-intersection-observer";
 import {useEffect} from "react";
+import {boxVariants, imageVariants, MotionBox, MotionImage} from "../helpers/helpers";
 
-const Weather = () => {
+
+const Quizz = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
   useEffect(() => {
@@ -23,17 +18,17 @@ const Weather = () => {
   return (
     <Box
       mt={"20"}
-      pb={"6"}
       display={["block", "flex", "flex", "flex"]}
       justifyContent={"space-evenly"}
       gap={"4"}
+      pb={"10"}
     >
       <MotionImage
           ref={ref}
           animate={controls}
           initial="hidden"
           variants={imageVariants}
-        src="/Weather.svg"
+        src="/Quizz.svg"
         alt="Picture of the author"
         boxSize={["150", "240", "240", "240"]}
         mx={"auto"}
@@ -44,12 +39,13 @@ const Weather = () => {
           animate={controls}
           initial="hidden"
           variants={boxVariants} width={["", "md", "lg", "lg"]}>
-        <Heading>Weather Application</Heading>
+        <Heading>Markdown Blog</Heading>
         <Text fontSize={["xl", "xl", "2xl", "2xl"]} fontWeight={"bold"} color={"gray.500"}>
-          Next js,Material ui,openMapWeatherApi
+          Next.js,Chakra ui,Markdown
         </Text>
         <Text fontSize={"lg"} mt={"4"} mb={"10"}>
-          This web application fetches real time weather data from openMapWeatherApi of user entered location and then displays result.
+
+          A hobby project to improve my writing skills and to document my learning
         </Text>
         <Box display={"flex"} gap={"12"}>
           <Button
@@ -58,17 +54,17 @@ const Weather = () => {
             color={"white"}
             _dark={{ backgroundColor: "green.400" }}
           >
-              <Link _hover={{textDecoration:'none'}} href={'https://weather-application-dev.vercel.app/'} isExternal={true}>
 
+              <Link href={'/https://quizz-app-one.vercel.app/'}>
                   Live preview
               </Link>
           </Button>
-          <Link _hover={{textDecoration:'none'}} href={'https://github.com/waheed-dev/Weather-app'} isExternal={true}>
+          <Hyper href={' https://github.com/waheed-dev/quizz-app'} isExternal>
           <AiFillGithub size={"40"} />
-          </Link>
+          </Hyper>
         </Box>
       </MotionBox>
     </Box>
   );
 };
-export default Weather
+export default Quizz

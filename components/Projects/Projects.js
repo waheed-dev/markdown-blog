@@ -1,15 +1,15 @@
 import {Box,Heading} from "@chakra-ui/react";
-import Weather from "./Weather";
-import Budget from "./Budget";
-import Blog from "./Blog";
+import JobApp from "./JobApp";
+import AirBnbClone from "./AirBnbClone";
+import Quizz from "./Quizz";
 
 const Projects = () => {
   return (
       <Box>
         <Heading>Projects</Heading>
-          <Weather/>
-          <Budget/>
-          <Blog/>
+          <JobApp/>
+          <AirBnbClone/>
+          <Quizz/>
       </Box>
   )
 }

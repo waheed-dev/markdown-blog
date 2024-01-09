@@ -1,13 +1,18 @@
-import {Box, Image, Text, Heading, Button, Link as Hyper} from "@chakra-ui/react";
-import Link from 'next/link'
+import { Box, Image, Text, Heading, Button,Link} from "@chakra-ui/react";
 import { AiFillGithub } from "react-icons/ai";
+import {
+  boxVariants,
+  imageVariants,
+  MotionBox,
+  MotionImage,
+  outerboxVariants,
+  outerimageVariants
+} from "../helpers/helpers";
 import {useAnimation} from "framer-motion";
 import {useInView} from "react-intersection-observer";
 import {useEffect} from "react";
-import {boxVariants, imageVariants, MotionBox, MotionImage} from "../helpers/helpers";
 
-
-const Blog = () => {
+const AirBnbClone = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
   useEffect(() => {
@@ -20,15 +25,17 @@ const Blog = () => {
       mt={"20"}
       display={["block", "flex", "flex", "flex"]}
       justifyContent={"space-evenly"}
+      pb={"6"}
+
+      flexDirection={"row-reverse"}
       gap={"4"}
-      pb={"10"}
     >
       <MotionImage
           ref={ref}
           animate={controls}
           initial="hidden"
           variants={imageVariants}
-        src="/Blog.svg"
+        src="/AirBnb.svg"
         alt="Picture of the author"
         boxSize={["150", "240", "240", "240"]}
         mx={"auto"}
@@ -39,13 +46,12 @@ const Blog = () => {
           animate={controls}
           initial="hidden"
           variants={boxVariants} width={["", "md", "lg", "lg"]}>
-        <Heading>Markdown Blog</Heading>
+        <Heading>AirBnb Clone</Heading>
         <Text fontSize={["xl", "xl", "2xl", "2xl"]} fontWeight={"bold"} color={"gray.500"}>
-          Next.js,Chakra ui,Markdown
+          NextJs,Tailwind,Prisma
         </Text>
         <Text fontSize={"lg"} mt={"4"} mb={"10"}>
-
-          A hobby project to improve my writing skills and to document my learning
+          an Airbnb clone using Next.js 13, Prisma, and Tailwind for a modern, responsive, and dynamic web experience.
         </Text>
         <Box display={"flex"} gap={"12"}>
           <Button
@@ -54,17 +60,18 @@ const Blog = () => {
             color={"white"}
             _dark={{ backgroundColor: "green.400" }}
           >
+            <Link _hover={{textDecoration:'none'}} href={'https://airbnb-clone-next13-pi.vercel.app/'} isExternal={true}>
 
-              <Link href={'/blog'}>
-                  Live preview
-              </Link>
+              Live preview
+            </Link>
           </Button>
-          <Hyper href={' https://github.com/waheed-dev/portfolio-and-markdown-blog/'} isExternal>
+
+              <Link _hover={{textDecoration:'none'}} href={'https://github.com/waheed-dev/Airbnb-clone-next13'} isExternal={true}>
           <AiFillGithub size={"40"} />
-          </Hyper>
+              </Link>
         </Box>
       </MotionBox>
     </Box>
   );
 };
-export default Blog
+export default AirBnbClone

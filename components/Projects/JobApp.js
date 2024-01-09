@@ -1,4 +1,4 @@
-import { Box, Image, Text, Heading, Button,Link} from "@chakra-ui/react";
+import {Box, Image, Text, Heading, Button, Link,useColorModeValue as mode} from "@chakra-ui/react";
 import { AiFillGithub } from "react-icons/ai";
 import {
   boxVariants,
@@ -12,7 +12,7 @@ import {useAnimation} from "framer-motion";
 import {useInView} from "react-intersection-observer";
 import {useEffect} from "react";
 
-const Budget = () => {
+const JobApp = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
   useEffect(() => {
@@ -23,11 +23,9 @@ const Budget = () => {
   return (
     <Box
       mt={"20"}
+      pb={"6"}
       display={["block", "flex", "flex", "flex"]}
       justifyContent={"space-evenly"}
-      pb={"6"}
-
-      flexDirection={"row-reverse"}
       gap={"4"}
     >
       <MotionImage
@@ -35,8 +33,8 @@ const Budget = () => {
           animate={controls}
           initial="hidden"
           variants={imageVariants}
-        src="/Budget.svg"
-        alt="Picture of the author"
+        src="/JobApp.svg"
+        alt="Picture of the jobApp"
         boxSize={["150", "240", "240", "240"]}
         mx={"auto"}
         mb={"2"}
@@ -46,13 +44,12 @@ const Budget = () => {
           animate={controls}
           initial="hidden"
           variants={boxVariants} width={["", "md", "lg", "lg"]}>
-        <Heading>Budget Application</Heading>
+        <Heading>Job Tracker</Heading>
         <Text fontSize={["xl", "xl", "2xl", "2xl"]} fontWeight={"bold"} color={"gray.500"}>
-          React,React-bootstrap
+          Mern Stack
         </Text>
         <Text fontSize={"lg"} mt={"4"} mb={"10"}>
-          This simple React app has it all from custom hooks to custom context and prop drilling and more <br/>
-          We can stuff like adding expenses,removing expenses and creating budget
+          MERN stack job tracking app for efficient job application management.
         </Text>
         <Box display={"flex"} gap={"12"}>
           <Button
@@ -61,18 +58,17 @@ const Budget = () => {
             color={"white"}
             _dark={{ backgroundColor: "green.400" }}
           >
-            <Link _hover={{textDecoration:'none'}} href={'https://react-budget-app-vert.vercel.app/'} isExternal={true}>
+              <Link _hover={{textDecoration:'none'}} href={'https://mern-jobs-app.onrender.com/'} isExternal={true}>
 
-              Live preview
-            </Link>
-          </Button>
-
-              <Link _hover={{textDecoration:'none'}} href={'https://github.com/waheed-dev/react-budget-app'} isExternal={true}>
-          <AiFillGithub size={"40"} />
+                  Live preview
               </Link>
+          </Button>
+          <Link _hover={{textDecoration:'none'}} href={'https://github.com/waheed-dev/jobs-app-mern-stack'} isExternal={true}>
+          <AiFillGithub size={"40"} />
+          </Link>
         </Box>
       </MotionBox>
     </Box>
   );
 };
-export default Budget
+export default JobApp
