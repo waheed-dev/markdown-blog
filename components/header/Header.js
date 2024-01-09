@@ -17,13 +17,6 @@ const Header = () => {
         </Heading>
             <Box display={'flex'}  alignItems={'center'} gap={['4','6','8','10']}>
 
-
-                <Link href={'/blog'}>
-
-                   <Button variant={'unstyled'} fontSize={'lg'} fontWeight={'semibold'}  _hover={{cursor : 'pointer'}}>
-                       Blog
-                   </Button>
-                </Link>
         <Button variant={'outline'} onClick={toggleColorMode}>
              {colorMode === 'light' ? <BsSun size={20}/> : <BsMoon size={'20'}/>}
         </Button>

@@ -28,18 +28,7 @@ export default function Home({posts}) {
         <Header />
 
           <PortCta/>
-                {posts.map((post) => (
-                    <PortBlogCard
-                        key={Math.random()}
-                        title={post.postData.title}
-                        date={post.postData.date}
-                        author={post.postData.author}
-                        coverImg={post.postData.cover_image}
-                        category={post.postData.category}
-                        excerpt={post.postData.excerpt}
-                        slug={post.slug}
-                    />
-                ))}
+
             <SelfInfo/>
             <Projects/>
             <Skills/>

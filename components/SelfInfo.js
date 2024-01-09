@@ -49,11 +49,11 @@ const SelfInfo = () => {
               ref={ref}
               animate={controls}
               initial="hidden"
-            mt={""}
+            mt={"2"}
             src="/sellff.png"
               objectFit={'cover'}
             alt="Picture of the author"
-            boxSize={["200", "220", "250", "300"]}
+            boxSize={["220", "220", "250", "290"]}
           />
 
 
