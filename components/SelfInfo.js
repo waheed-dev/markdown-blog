@@ -38,6 +38,7 @@ const SelfInfo = () => {
           display={"flex"}
           mx={"auto"}
           backgroundColor={'gray.300'}
+          _dark={{backgroundColor : 'transparent'}}
           justifyContent={"center"}
           alignContent={"center"}
           borderColor={"green.400"}

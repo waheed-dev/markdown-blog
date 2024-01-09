@@ -7,10 +7,10 @@ const PortCta = () => {
             <ImQuotesLeft size={'22'}/>
             <Heading textAlign={'center'} fontSize={['2xl','2xl','3xl','3xl']} my={'12'}
             >I can help make your site
-                <Heading fontSize={['2xl','2xl','3xl','3xl']} color={'green.500'} _dark={{color : 'green.400'}}
+                <Heading fontSize={['2xl','2xl','3xl','4xl']} color={'green.500'} _dark={{color : 'green.400'}}
                             fontWeight={'bold'}>
                     <Typewriter
-                        words={['More fast','Generate more revenue','More secure','Rank better and have better SEO']}
+                        words={['More fast','More secure','have better SEO']}
                         loop={5}
                         cursor
                         cursorStyle='_'
