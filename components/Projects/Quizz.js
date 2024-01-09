@@ -39,7 +39,7 @@ const Quizz = () => {
           animate={controls}
           initial="hidden"
           variants={boxVariants} width={["", "md", "lg", "lg"]}>
-        <Heading>Markdown Blog</Heading>
+        <Heading>Quizz App</Heading>
         <Text fontSize={["xl", "xl", "2xl", "2xl"]} fontWeight={"bold"} color={"gray.500"}>
          vite and Json-server
         </Text>

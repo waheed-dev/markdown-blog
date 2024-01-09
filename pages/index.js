@@ -1,12 +1,8 @@
-import fs from 'fs'
-import path from 'path'
+
 import Head from "next/head";
 import {Box, Divider} from "@chakra-ui/react";
 import Header from "../components/header/Header";
 import Footer from "../components/Footer";
-import matter from "gray-matter";
-import {sortByDate} from "../Helpers";
-import PortBlogCard from "../components/PortBlogCard";
 import PortCta from "../components/PortCta";
 import SelfInfo from "../components/SelfInfo";
 import Projects from "../components/Projects/Projects";
@@ -44,23 +40,3 @@ export default function Home({posts}) {
   );
 }
 
-export async function getStaticProps() {
-    const files = fs.readdirSync(path.join("posts"));
-    const posts = files.map((post) => {
-        const slug = post.replace(".md", "");
-        const markdownWithMatter = fs.readFileSync(
-            path.join("posts", post),
-            "utf-8"
-        );
-        const { data: postData } = matter(markdownWithMatter);
-        return {
-            slug,
-            postData,
-        };
-    });
-    return {
-        props: {
-            posts: posts.sort(sortByDate).slice(0, 1)
-        },
-    };
-}
