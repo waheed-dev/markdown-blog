@@ -7,9 +7,9 @@ const Projects = () => {
   return (
       <Box>
         <Heading>Projects</Heading>
-          <JobApp/>
-          <AirBnbClone/>
           <Quizz/>
+          <AirBnbClone/>
+          <JobApp/>
       </Box>
   )
 }

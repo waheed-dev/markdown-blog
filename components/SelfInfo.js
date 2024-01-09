@@ -34,7 +34,7 @@ const SelfInfo = () => {
         <Box
           border={"2px"}
           mt={"2"}
-          boxSize={["280", "300", "320", "380"]}
+          boxSize={["300", "320", "340", "380"]}
           display={"flex"}
           mx={"auto"}
           backgroundColor={'gray.300'}
@@ -53,7 +53,7 @@ const SelfInfo = () => {
             src="/sellff.png"
               objectFit={'cover'}
             alt="Picture of the author"
-            boxSize={["220", "220", "250", "290"]}
+            boxSize={["220", "230", "250", "290"]}
           />
 
 
