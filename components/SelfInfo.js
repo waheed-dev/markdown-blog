@@ -34,7 +34,7 @@ const SelfInfo = () => {
         <Box
           border={"2px"}
           mt={"2"}
-          boxSize={["250", "250", "320", "380"]}
+          boxSize={["280", "300", "320", "380"]}
           display={"flex"}
           mx={"auto"}
           backgroundColor={'gray.300'}

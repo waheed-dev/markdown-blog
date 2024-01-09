@@ -41,11 +41,11 @@ const Quizz = () => {
           variants={boxVariants} width={["", "md", "lg", "lg"]}>
         <Heading>Markdown Blog</Heading>
         <Text fontSize={["xl", "xl", "2xl", "2xl"]} fontWeight={"bold"} color={"gray.500"}>
-          Next.js,Chakra ui,Markdown
+         vite and Json-server
         </Text>
         <Text fontSize={"lg"} mt={"4"} mb={"10"}>
 
-          A hobby project to improve my writing skills and to document my learning
+          A Quizz project that tracks users time, score, right and wrong answers and time taken by each questions
         </Text>
         <Box display={"flex"} gap={"12"}>
           <Button
@@ -55,11 +55,11 @@ const Quizz = () => {
             _dark={{ backgroundColor: "green.400" }}
           >
 
-              <Link href={'/https://quizz-app-one.vercel.app/'}>
+              <Link href={'https://quizz-app-one.vercel.app/'}>
                   Live preview
               </Link>
           </Button>
-          <Hyper href={' https://github.com/waheed-dev/quizz-app'} isExternal>
+          <Hyper href={'https://github.com/waheed-dev/quizz-app'} isExternal>
           <AiFillGithub size={"40"} />
           </Hyper>
         </Box>
