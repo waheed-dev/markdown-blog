@@ -3,11 +3,11 @@ import {ImQuotesLeft,ImQuotesRight} from 'react-icons/im'
 import {Typewriter} from "react-simple-typewriter";
 const PortCta = () => {
     return (
-        <Box display={'flex'} justifyContent={'center'}>
+        <Box display={'flex'} justifyContent={'center'} mt={'12'}>
             <ImQuotesLeft size={'22'}/>
-            <Heading textAlign={'center'} fontSize={['2xl','2xl','3xl','3xl']} my={'12'}
+            <Heading textAlign={'center'} fontSize={['3xl','4xl','5xl','6xl']} my={'12'}
             >I can help make your site
-                <Heading fontSize={['2xl','2xl','3xl','4xl']} color={'green.500'} _dark={{color : 'green.400'}}
+                <Heading fontSize={['3xl','4xl','5xl','6xl']} color={'green.500'} _dark={{color : 'green.400'}}
                             fontWeight={'bold'}>
                     <Typewriter
                         words={['More fast','More secure','have better SEO']}
