@@ -34,7 +34,7 @@ const SelfInfo = () => {
         <Box
           border={"2px"}
           mt={"2"}
-          boxSize={["250", "250", "300", "380"]}
+          boxSize={["250", "250", "320", "380"]}
           display={"flex"}
           mx={"auto"}
           backgroundColor={'gray.300'}
@@ -49,12 +49,11 @@ const SelfInfo = () => {
               ref={ref}
               animate={controls}
               initial="hidden"
-              variants={imageVariants}
             mt={""}
             src="/sellff.png"
               objectFit={'cover'}
             alt="Picture of the author"
-            boxSize={["170", "170", "200", "300"]}
+            boxSize={["200", "220", "250", "300"]}
           />
 
 
